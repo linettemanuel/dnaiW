@@ -21,6 +21,10 @@
     margin-bottom: 20px;
     word-wrap: break-word;
 }
+.move-team-item {
+    width: 400px;
+}
+
 
 .join {
     margin: auto;
@@ -149,6 +153,10 @@
         width: 200px;
         height: 200px;
         margin-left: 20px;
+    }
+
+    .move-team-item  {
+        width: 200px;
     }
 
     .carousel-caption {
@@ -686,6 +694,12 @@ footer {
         height: auto;
         width: 200vw;
         transform: translate(-24%,0%);
+    }
+}
+
+@media (max-width: 440px) {
+    .move-team-item {
+        width: inherit;
     }
 }
 
