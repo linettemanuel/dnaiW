@@ -3,16 +3,25 @@
  * Copyright 2013-2019 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-grayscale/blob/master/LICENSE)
  */
- @font-face {
+
+@font-face {
+    font-family: "GT America";
+    src: url("../fonts/GT\ America/GT-America-Extended-Ultra-Light.otf");
+    font-weight: 100;
+}
+
+@font-face {
     font-family: "GT America";
     src: url("../fonts/GT\ America/GT-America-Regular.otf");
+    font-weight: 300;
 }
 
 @font-face {
     font-family: "GT America";
     src: url("../fonts/GT\ America/GT-America-Extended-Bold.otf");
-    font-weight: bold;
+    font-weight: 600;
 }
+
 
 .team-item {
     width: 400px;
@@ -103,7 +112,7 @@
 	font-family: 'GT America';
 	font-size: 1.5rem;
     color: white;  
-    font-weight: bold;
+    font-weight: 600;
 }
 
 .masthead h2 {
@@ -299,7 +308,7 @@ footer {
 }
 
 .text-bold {
-    font-weight: bold;
+    font-weight: 600;
 }
 
 .border-top-4 {
@@ -665,7 +674,7 @@ footer {
         text-transform: capitalize;
 		-webkit-transition: none;
         transition: none;
-        font-weight: bold;
+        font-weight: 600;
 		padding: 2rem 1.5rem;
 		color: white;
 	}
@@ -896,4 +905,95 @@ footer {
 
 .bg-white:hover {
     opacity: 1;
+}
+
+#preloader {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10000;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    opacity: 1;
+    transition: 3s all ease;
+}
+
+#preloader .container{
+    position: relative;
+    max-width: 100vw;
+    width: 80%;
+}
+
+#preloader .anim-logo {
+    transition: 3s all  ease;
+    position: relative;
+    width: 100%;
+    top: 37.5vh;
+}
+#preloader .proloader-cap {
+    font-family: "GT America";
+    transition: 1s all  ease;
+    position: relative;
+    top: -15vh;
+    font-size: 2vw;
+    font-weight: 100;
+    opacity: 0;
+}
+
+@media (min-width: 1000px) {
+    #preloader .anim-logo {
+        width: 100%;
+    }
+}
+
+@media (max-width: 1000px) and (min-width:850px) {
+    #preloader .anim-logo {
+        width: 103%;
+    }
+    #preloader .proloader-cap {
+        top: -17vh;
+        font-size: 2.5vw;
+    }
+}
+
+@media (max-width: 850px) and (min-width:600px) {
+    #preloader .anim-logo {
+        width: 105%;
+    }
+    #preloader .proloader-cap {
+        top: -22vh;
+        font-size: 3vw;
+    }
+}
+
+@media (max-width: 600px) and (min-width:460px) {
+    #preloader .anim-logo {
+        width: 110%;
+    }
+    #preloader .proloader-cap {
+        top: -25vh;
+        font-size: 4vw;
+    }
+}
+
+@media (max-width: 460px) and (min-width:375px) {
+    #preloader .anim-logo {
+        width: 115%;
+    }
+    #preloader .proloader-cap {
+        top: -30vh;
+        font-size: 5vw;
+    }
+}
+
+@media (max-width: 375px) {
+    #preloader .anim-logo {
+        width: 120%;
+    }
+    #preloader .proloader-cap {
+        top: -30vh;
+        font-size: 5vw;
+    }
 }

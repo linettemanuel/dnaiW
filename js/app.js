@@ -149,3 +149,18 @@ function cursorColor(x) {
     }
 }
 
+window.onload = () => {
+    document.querySelector(".anim-logo-dn").style.transform = "translateX(52.85%)";
+    document.querySelector(".anim-logo-ai").style.transform = "translateX(-52.85%)";
+    setTimeout(() => {
+        document.querySelector(".proloader-cap").style.opacity = 1;
+        disappearPreloaderBack();
+    }, 2750)
+}
+
+function disappearPreloaderBack() {
+    setTimeout(() => {
+        document.querySelector("#preloader").style.zIndex = -10;
+        document.querySelector("#preloader").style.opacity = 0;
+    }, 3000)
+}
