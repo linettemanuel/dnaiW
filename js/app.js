@@ -7,9 +7,11 @@ let i = 0;
 let current = document.querySelector(".active");
 let state = "motor";
 let windowWidht = window.innerWidth;
+let join = document.querySelector(".move-team-item");
 
 window.onload = () => {
     scaleVideo(state);
+    cursorColor(state);
 }
 
 window.onscroll = () => {
@@ -103,12 +105,14 @@ function changeVideo() {
             document.querySelector(".promo-video").src = "./video/srdce.mp4";
             windowWidht = window.innerWidth;
             scaleVideo(state);
+            cursorColor(state);
             changeColorOfActiveLinks("#D5392E");
         } else if ((item.classList.contains("active")) && (item.children[0].alt == "srdce")) {
             state = "motor";
             document.querySelector(".promo-video").src = "./video/motor.mp4";
             windowWidht = window.innerWidth;
             scaleVideo(state);
+            cursorColor(state);
             changeColorOfActiveLinks("#64a19d");
         }
     })
@@ -125,11 +129,23 @@ function changeColorOfActiveLinks(color) {
     })
 }
 
-/*
-window.onload = () => {
-    setInterval(() => {
-        i++;
-        changePictures()
-    }, 3000)
+function cursorColor(x) {
+    if(x=="motor") {
+        console.log("Jsem tu! Motor!")
+        join.onmouseenter = () => {
+            join.style.cursor = "url(./img/cursor_blue.png), pointer";
+        }
+        join.onmouseleave = () => {
+            join.style.cursor = "auto";
+        }
+    } else if (x=="srdce") {
+        console.log("Jsem tu! Srdce!")
+        join.onmouseenter = () => {
+            join.style.cursor = "url(./img/cursor_red.png), pointer";
+        }
+        join.onmouseleave = () => {
+            join.style.cursor = "auto";
+        }
+    }
 }
-*/
+

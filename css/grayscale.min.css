@@ -391,7 +391,7 @@ footer {
 }
 
 .vision:hover  {
-    cursor: pointer;
+    cursor: url("../img/cursor2.png"), pointer;
 }
 
 .vision:hover .img-two {
@@ -459,7 +459,7 @@ footer {
 }
 
 .vision-two:hover  {
-    cursor: pointer;
+    cursor: url("../img/cursor.png"), pointer;
 }
 
 .vision-two:hover .img-two {
@@ -518,7 +518,7 @@ footer {
 }
 
 .move-team-item:hover {
-    cursor: pointer;
+    cursor: url(../img/cursor3.png), pointer;
     transform: scale(1.1);
     transition: 1s all ease;
 }
@@ -613,6 +613,9 @@ footer {
 	.projects-section .featured-text {
 		padding: 0 0 0 2rem;
 		border-left: .5rem solid #64a19d
+    }
+    .mt-lg-16 {
+        margin-top: 8rem;
     }
 }
 
@@ -889,4 +892,8 @@ footer {
     .contact-section {
         padding: 10rem 0;
     }
+}
+
+.bg-white:hover {
+    opacity: 1;
 }
