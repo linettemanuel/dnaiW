@@ -81,10 +81,18 @@ controls.forEach( control => {
 })
 
 function scaleVideo(state) {
-    if ((windowWidht < 900) && (state=="motor")) {
+    if ((windowWidht < 700) && (state=="motor")) {
         document.querySelector(".promo-video").style.transform = "scale(2.1)";
-    } else if ((windowWidht < 900) && (state=="srdce")) {
+        if(windowWidht < 700) {
+            document.querySelector(".about-section").style.padding = "13rem 0rem 2rem";
+        }
+    } else if ((windowWidht < 700) && (state=="srdce")) {
         document.querySelector(".promo-video").style.transform = "scale(1)";
+        if(windowWidht < 700) {
+            document.querySelector(".about-section").style.padding = "";
+        }
+    } else {
+        document.querySelector(".about-section").style.padding = "";
     }
 }
 
