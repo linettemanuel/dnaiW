@@ -81,9 +81,9 @@ controls.forEach( control => {
 })
 
 function scaleVideo(state) {
-    if ((windowWidht < 400) && (state=="motor")) {
+    if ((windowWidht < 900) && (state=="motor")) {
         document.querySelector(".promo-video").style.transform = "scale(2.1)";
-    } else if ((windowWidht < 400) && (state=="srdce")) {
+    } else if ((windowWidht < 900) && (state=="srdce")) {
         document.querySelector(".promo-video").style.transform = "scale(1)";
     }
 }

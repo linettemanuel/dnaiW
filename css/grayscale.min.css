@@ -369,10 +369,11 @@ footer {
 }
 
 .team-item h5 {
-    width: 90%;
+    width: 85%;
     display: block;
     position: relative;
     margin: auto;
+    margin-left: 1rem;
     font-size: 1rem;
     top: 70%;
 }
@@ -529,6 +530,12 @@ footer {
     text-align: center;
 }
 
+.team-item img {
+    position: relative;
+    top: 0;
+}
+
+
 .move-team-item img {
     margin-left: 1rem;
     opacity: 0;
@@ -620,7 +627,13 @@ footer {
 		border-color: #64a19d;
 		border-width: .25rem;
 		width: 30%
-	}
+    }
+    .team-item h5 {
+        position: absolute;
+    }
+    .team-item img {
+        position: absolute;
+    }
 }
 
 @media (min-width:992px) {
@@ -695,16 +708,6 @@ footer {
         text-align: left;
     }
 
-    .team-item {
-        width: 235px;
-        height: 235px;
-        margin: 5px;
-    }
-
-    .move-team-item  {
-        width: 235px;
-    }
-
     .carousel-caption {
         bottom: 0px;
         margin-left: -5rem;
@@ -751,5 +754,136 @@ footer {
     }
     .technology {
         width: 75%;
+    }
+
+    .team-item {
+        width: 31%;
+        position: relative;
+        height: auto;
+        padding-top: 31%;
+        margin: 0.4vw;
+    }
+
+    .join {
+        width: 31%;
+    }
+
+    .move-team-item  {
+        width: 100%;
+        padding-top: 100%;
+    }
+
+    .move-team-item:hover img {
+        transform: translate(150%, 50%);
+        display: block;
+    }
+}
+@media (min-width: 1600px) {
+    .container {
+        max-width: 85vw;
+    }
+    .masthead h1 {
+        font-size: 3.75vw;
+    }
+
+    .masthead h2 {
+        font-size: 1.5vw;
+        max-width: 50rem;
+        padding-top: 1.5rem;
+    }
+
+    h3 {
+        font-size: 1.4vw;
+    }
+
+    .vision h2, .vision-two h2 {
+        font-size: 1.5vw;
+    }
+
+    h4 {
+        font-size: 1.3vw;
+    }
+
+    .team-item h5, h5 {
+        font-size: 1.2vw;
+    }
+
+    h6 {
+        font-size: 1.1vw;
+    }
+
+    .mb-6 {
+        margin-bottom: 15rem !important;
+    }
+    .about-section p {
+        font-size: 1vw;
+    }
+
+    .join-section p {
+        font-size: 1vw;
+    }
+
+    .contact-item p {
+        font-size: 0.9vw;
+    }
+
+    .vision-section {
+        padding: 8rem 0;
+    }
+
+    .vision-section p {
+        font-size: 1vw;
+    }
+
+    .vision:hover .show-up p {
+        font-size: 1vw;
+    }
+
+    .vision-two:hover .show-up p {
+        font-size: 1vw;
+    }
+
+    .vision:hover h2 {
+        font-size: 1.3vw;
+    }
+
+    .vision-two:hover h2 {
+        font-size: 1.3vw;
+    }
+
+    .vision-two:hover .img-two {
+        bottom: -27vh;
+    }
+
+    .vision-two:hover img {
+        bottom: -20vh;
+    }
+
+
+    .signup-section p {
+        font-size: 1.2vw;
+    }
+
+    .move-team-item  {
+        width: 100%;
+    }
+
+    .small {
+        font-size: 0.9vw;
+    }
+
+    #mainNav .nav-link {
+        font-size: 1vw;
+    }
+
+    #mainNav .navbar-brand img {
+        width: 7.5vw;
+    }
+    .carousel-control-next-icon, .carousel-control-prev-icon {
+        width: 2vw;
+        height: 2vw;
+    }
+    .contact-section {
+        padding: 10rem 0;
     }
 }
