@@ -6,6 +6,11 @@ let carouselItems = document.querySelectorAll(".carousel-item");
 let i = 0;
 let current = document.querySelector(".active");
 let state = "motor";
+let windowWidht = window.innerWidth;
+
+window.onload = () => {
+    scaleVideo(state);
+}
 
 window.onscroll = () => {
     current = document.querySelector(".active");
@@ -15,7 +20,6 @@ window.onscroll = () => {
                 item.classList.remove("active-red");
             })
             current.classList.add("active-red");
-            console.log(current.classList);
         } else if (state == "motor") {
             if(current.classList.contains("active-red")){
                 current.classList.remove("active-red"); 
@@ -39,7 +43,7 @@ window.onscroll = () => {
                 }         
             })
             logo.src = "img/dnai_dark.svg";
-            logo.style.width = "40%";
+            logo.style.width = "47%";
         } else {
             navMenuItems.forEach( item => {
                 if(item.innerHTML != current) {
@@ -76,15 +80,27 @@ controls.forEach( control => {
     }
 })
 
+function scaleVideo(state) {
+    if ((windowWidht < 400) && (state=="motor")) {
+        document.querySelector(".promo-video").style.transform = "scale(2.1)";
+    } else if ((windowWidht < 400) && (state=="srdce")) {
+        document.querySelector(".promo-video").style.transform = "scale(1)";
+    }
+}
+
 function changeVideo() { 
     carouselItems.forEach( item  => {
         if ((item.classList.contains("active")) && (item.children[0].alt == "motor")) {
-            document.querySelector(".promo-video").src = "./video/srdce.mp4";
-            changeColorOfActiveLinks("#D5392E");
             state = "srdce";
+            document.querySelector(".promo-video").src = "./video/srdce.mp4";
+            windowWidht = window.innerWidth;
+            scaleVideo(state);
+            changeColorOfActiveLinks("#D5392E");
         } else if ((item.classList.contains("active")) && (item.children[0].alt == "srdce")) {
-            document.querySelector(".promo-video").src = "./video/motor.mp4";
             state = "motor";
+            document.querySelector(".promo-video").src = "./video/motor.mp4";
+            windowWidht = window.innerWidth;
+            scaleVideo(state);
             changeColorOfActiveLinks("#64a19d");
         }
     })
