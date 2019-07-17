@@ -56,7 +56,7 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#about">our focus</a>
+            <a class="nav-link js-scroll-trigger" href="#our-focus">our focus</a>
           </li>
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#projects">digital twin</a>
@@ -80,7 +80,7 @@
 
   <!-- Carousel -->
   <header class="masthead">
-    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="3000" style="max-height: 100vh;">
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="7000" style="max-height: 100vh;">
       <div class="carousel-inner">
         <div class="carousel-item active">
           <img class="cover-img d-block" src="./img/motor.png" alt="motor">
@@ -144,10 +144,10 @@
   <!-- About Section -->
   <section id="about" class="about-section text-center">
     <div class="container" style="max-width: 90vw;">
-      <div class="row no-gutters mb-4 mb-lg-5">
+      <div id="our-focus" class="row no-gutters mb-4 mb-lg-5">
         <div class="col-xl-8 col-lg-7">
             <video class="w-100 h-100 promo-video" loop no-controls muted autoplay defaultmuted playsinline>
-              <source src="./video/motor.mp4" type="video/mp4">
+              <source class="given-video" src="./video/motor.mp4" type="video/mp4">
               Your browser does not support the video tag.
             </video>
         </div>
@@ -167,13 +167,98 @@
     </div>
   </section>
 
+  <!-- Projects Section -->
+  <section id="projects" class="projects-section bg-black">
+      <div class="container" style="max-width: 100vw; padding: 0;">
+  
+        <!-- Featured Project Row -->
+  
+        <!-- Project One Row -->
+        <div class="row justify-content-center no-gutters mb-lg-0" style="background: #201F25;">
+          <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 digital">
+            <div class="row">
+              <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 d-inline-block twin-artical">
+                <div class="featured-text text-center text-lg-left">
+                  <h4 class="text-white mx-auto text-bold border-top-3 mb-6" >Digital Twin</h4>
+                  <p class="text-white mb-2 mx-auto">Digital Twin is a software component that mimics behavior of a physical system or a product. Unlike physical systems that are closed, have hidden states, give noisy and delayed information. <span class="read-more-btn">Read more</span><span class="read-more">The digital twin is open, 100% transparent to the users, gives actual infromation with supressed noise. Actual and future states are estimated from a sequence of historical and actual observations of the original physical system.</span></p> 
+                </div>
+              </div>
+              <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 d-inline-block twin-img">
+                <img class="strong-pic" src="./img/bar-chart.svg" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 digital">
+            <div class="row">
+              <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 d-inline-block twin-img-two">
+                <img class="light-pic" src="./img/bar-chart_tenka.svg" alt="">
+              </div>
+              <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 d-inline-block twin-artical">
+                    <div id="slideshow">
+                      <div class="slide-wrapper">
+
+                        <div class="slide">
+                          <div class="featured-text text-left">
+                            <h6 class="text-white mx-auto text-bold mb-6">Digital twin can make predictions</h6>
+                            <p class="text-white mb-2 mx-auto">Digital twin can predict future development of machine states and therefore allows acting in advance.</p>
+                          </div>
+                        </div>
+
+                        <div class="slide">
+                          <div class="featured-text text-left">
+                            <h6 class="text-white mx-auto text-bold mb-6">Digital twin is active not passive</h6>
+                            <p class="text-white mb-2 mx-auto">Digital twin generates alerts and events as a reaction on important change, anomaly, state reached.</p>
+                          </div>
+                        </div>
+
+                        <div class="slide">
+                          <div class="featured-text text-left">
+                            <h6 class="text-white mx-auto text-bold mb-6">Digital twin is partition tolerant</h6>
+                            <p class="text-white mb-2 mx-auto">Digital twin can provide machine states before they are actually delivered from the machine or even when the real machine is disconnected for some time.</p>
+                          </div>
+                        </div>
+
+                        <div class="slide">
+                          <div class="featured-text text-left">
+                            <h6 class="text-white mx-auto text-bold mb-6">Digital twin can analyze root causes and influences</h6>
+                            <p class="text-white mb-2 mx-auto">Digital twin stores historical development of its states as well as interactions with other systems - therefore can back correlate what influenced.</p>
+                          </div>
+                        </div>
+
+                        <div class="slide">
+                          <div class="featured-text text-left">
+                            <h6 class="text-white mx-auto text-bold mb-6">360º view of the system</h6>
+                            <p class="text-white mb-2 mx-auto">The quality largerly depends on the percentace of influencing information on its disposal. Putting a physical system into its full context gives much bigger plausability and accuracy of outputs.</p>
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> 
+        <div class="row" style="position: absolute; width: 100%;left: -1.5vw; margin-top: -5rem;">
+          <div class="col-12">
+            <div class="twin-menu">
+                <span class="active-twin"></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
   <section id="signup" class="vision-section text-center">
     <div class="container">
       <div class="row">
         <div class="col-lg-8 mx-auto">
           <img src="./img/group4.svg" alt="diamond icon">
           <h3 class="text-white mx-auto text-bold text-center mb-4 mt-4">Vision & Values</h3>
-          <p class="text-white mb-2 mx-auto values-cap">With an incredibly fast-paced technology development, we are standing right now at the fateful junction. Technology can help us solve most of the problems we face as humanity. But they also have the potential to destroy us. Stopping their development is not real and sitting and waiting for it to happen, we do not own.</p>        
+          <p class="text-white mb-2 mx-auto values-cap">Technology can help us solve most of the problems we face as humanity.<span class="read-more-btn"> Read more</span><span class="read-more">With an incredibly fast-paced technology development, we are standing right now at the fateful junction. But they also have the potential to destroy us. Stopping their development is not real and sitting and waiting for it to happen, we do not own.</span></p>        
         </div>
       </div>
     </div>
@@ -188,10 +273,10 @@
       <!-- Project One Row -->
       <div class="row justify-content-center no-gutters mb-lg-0">
         <div class="col-lg-6 vision">
-          <img class="d-block mx-auto pt-4" src="./img/eye.svg" alt="eye icons">
-          <h2 class="text-white text-center align-items-center text-capitalize mx-auto my-auto text-bold middle-text">our vision</h2>
+          <img class="d-block my-auto pt-4" src="./img/eye.svg" alt="eye icons">
+          <h2 class="text-white align-items-center text-capitalize mx-auto my-auto text-bold middle-text">our vision</h2>
           <div class="show-up">
-            <p class="text-white">We believe that Ethics will not hinder us or our clients. On the contrary, it will be a great competitive advantage and the positive impact of the things we work on will allow us to bring together the best experts. We can make sense of their passion and passion in the right direction - leaving the planet a better place for our children.</p>
+            <p class="text-white">We believe that Ethics will not hinder us or our clients. <span class="read-more-btn">Read more</span><span class="read-more">On the contrary, it will be a great competitive advantage and the positive impact of the things we work on will allow us to bring together the best experts. We can make sense of their passion and passion in the right direction - leaving the planet a better place for our children.</span></p>
           </div>
         </div>
         <div class="col-lg-6 vision-two">
@@ -209,14 +294,14 @@
           <img class="img-two d-block my-auto pt-4" src="./img/report.svg" alt="eye icons">
           <h2 class="text-white align-items-center text-capitalize mx-auto my-auto text-bold middle-text">research reports</h2>
           <div class="show-up">
-            <p class="text-white">In addition to our own research projects, we closely co-operate with top-class universities and support applied research. Collaboration and sharing know-how is our next key asset. That is why we teach, lecture, publish and contribute actively to the communities where we are members.</p>
+            <p class="text-white">In addition to our own research projects, we closely co-operate with top-class universities and support applied research. <span class="read-more-btn">Read more</span><span class="read-more"> Collaboration and sharing know-how is our next key asset. That is why we teach, lecture, publish and contribute actively to the communities where we are members.</span></p>
           </div>
         </div>
         <div class="col-lg-6 vision">
-          <img class="img-two d-block mx-auto pt-6" src="./img/new.svg" alt="eye icons">
-          <h2 class="text-white text-center align-items-center text-capitalize mx-auto my-auto text-bold middle-text">lastest research</h2>
+          <img class="img-two d-block my-auto pt-6" src="./img/new.svg" alt="eye icons">
+          <h2 class="text-white align-items-center text-capitalize mx-auto my-auto text-bold middle-text">lastest research</h2>
           <div class="show-up">
-            <p class="text-white">We track the latest technologies, explore them, and have a very good idea of ​​their possible benefits. In our view, we are positive and we perceive that it will be more about the strengths of both worlds than about their duels. This synergy can move us further as humanity and ensure that we do not destroy and leave the world a better place for our children and for the next generation.</p>
+            <p class="text-white">We track the latest technologies, explore them, and have a very good idea of ​​their possible benefits. <span class="read-more-btn">Read more</span><span class="read-more">In our view, we are positive and we perceive that it will be more about the strengths of both worlds than about their duels. This synergy can move us further as humanity and ensure that we do not destroy and leave the world a better place for our children and for the next generation.</span></p>
           </div>
         </div>
       </div>
@@ -230,7 +315,7 @@
         <div class="col-xl-3 col-lg-4 text-marg-right mb-5">
             <div class="featured-text text-center text-lg-left">
               <h4 class="text-black mx-auto text-bold border-top-black-3 mb-6" >Team</h4>
-              <p class="text-black mb-2 mx-auto">Our core team is made up of top architects, AI developers, mathematicians, statisticians and subject matter experts who are able to inspire, learn and combine the best of their disciplines so that we can jointly address the major challenges we face in individual industry areas. We are a group of people for whom it is important to make meaningful projects, people with an open mind who are not afraid of innovation, risking and learning from other colleagues, and of their own mistakes.</p>
+              <p class="text-black mb-2 mx-auto">Our core team is made up of top architects, AI developers, mathematicians, statisticians and subject matter experts who are able to inspire, learn and combine the best of their disciplines so that we can jointly address the major challenges we face in individual industry areas. <span class="read-more-btn">Read more</span><span class="read-more">We are a group of people for whom it is important to make meaningful projects, people with an open mind who are not afraid of innovation, risking and learning from other colleagues, and of their own mistakes.</span></p>
             </div>
           </div>
           <div class="col-xl-8 col-lg-7" style="margin-top: -5px;">
@@ -384,6 +469,7 @@
 
   <!-- Custom scripts for this template -->
   <script src="js/grayscale.min.js"></script>
+
   <script src="js/app.js"></script>
 
 </body>

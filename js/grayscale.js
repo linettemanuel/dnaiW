@@ -14,10 +14,6 @@
       }
     }
   });
-  
-  $('.carousel').carousel({
-    interval: 1000
-  })
 
   // Closes responsive menu when a scroll trigger link is clicked
   $('.js-scroll-trigger').click(function() {
@@ -45,5 +41,7 @@
   $(window).scroll(navbarCollapse);
 
 })(jQuery); // End of use strict
+
+
 
 
