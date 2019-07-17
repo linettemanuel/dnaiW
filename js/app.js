@@ -247,5 +247,6 @@ function disappearPreloaderBack() {
     setTimeout(() => {
         document.querySelector("#preloader").style.zIndex = -10;
         document.querySelector("#preloader").style.opacity = 0;
+        document.querySelector("#preloader").style.transition = "3s all ease";
     }, 3000)
 }

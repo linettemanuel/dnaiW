@@ -1126,7 +1126,6 @@ footer {
     height: 100vh;
     background-color: black;
     opacity: 0;
-    transition: 3s all ease;
 }
 
 #preloader .container{
