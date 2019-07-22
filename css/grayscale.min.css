@@ -71,6 +71,16 @@ h6 {
     bottom: -50px;
 }
 
+.black-box {
+    position: absolute;
+    display: block;
+    width: 22.5vh;
+    background: black;
+    right: 0;
+    height: 100%;
+    transform: translate(0, -100%);
+}
+
 .bullets {
     text-align: left;
 }
@@ -868,6 +878,9 @@ footer {
         font-size: 20px;
         letter-spacing: -0.16px;
     }
+    .black-box {
+        display: none;
+    }
     
 }
 
@@ -1169,7 +1182,7 @@ footer {
     }
 
     .masthead h2 {
-        font-size: 1.5vw;
+        font-size: 1.1vw;
         padding-top: 1.5rem;
     }
 
@@ -1198,14 +1211,17 @@ footer {
     }
     .about-section p {
         font-size: 1vw;
+        line-height: 1.5vw;
     }
 
     .join-section p {
         font-size: 1vw;
+        line-height: 1.5vw;
     }
 
     .contact-item p {
         font-size: 0.9vw;
+        line-height: 1.35vw;
     }
 
     .vision-section {
@@ -1214,14 +1230,17 @@ footer {
 
     .vision-section p {
         font-size: 1vw;
+        line-height: 1.5vw;
     }
 
     .vision:hover .show-up p {
         font-size: 1vw;
+        line-height: 1.5vw;
     }
 
     .vision-two:hover .show-up p {
         font-size: 1vw;
+        line-height: 1.5vw;
     }
 
     .vision:hover h2 {
@@ -1243,6 +1262,7 @@ footer {
 
     .signup-section p {
         font-size: 1.2vw;
+        line-height: 2.4vw;
     }
 
     .move-team-item  {
@@ -1255,6 +1275,7 @@ footer {
 
     #mainNav .nav-link {
         font-size: 1vw;
+        line-height: 1.5vw;
     }
 
     #mainNav .navbar-brand img {
@@ -1266,6 +1287,9 @@ footer {
     }
     .contact-section {
         padding: 10rem 0;
+    }
+    #slideshow {
+       width: 24vw;
     }
 }
 
