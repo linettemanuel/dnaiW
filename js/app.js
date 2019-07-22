@@ -263,6 +263,7 @@ window.onresize = () =>{
 }
 
 window.onload = () => {
+    getCoverImageSize();
     makeReadMoreTouchable();
     scaleVideo(state);
     cursorColor(state);
