@@ -465,6 +465,12 @@ footer {
     cursor: url("../img/cursor2.png"), pointer;
 }
 
+.vision-two:hover .inner-text  {
+    position: absolute;
+    display: block;
+    top: 20%;
+}
+
 .vision:hover .img-two {
     display: none;
     opacity: 0;
@@ -967,6 +973,16 @@ footer {
 
     .vision:hover .inner-text {
         margin-top: 0;
+        position: relative;
+        display: block;
+        top: 25%;
+    }
+
+    .vision-two:hover .inner-text {
+        margin-top: 0;
+        position: relative;
+        display: block;
+        top: 25%;
     }
     
     .vision-two:hover .inner-text {
