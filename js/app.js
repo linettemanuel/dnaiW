@@ -7,14 +7,14 @@ let i = 0;
 let current = document.querySelector(".active");
 let state = "motor";
 let windowWidht = window.innerWidth;
-//let join = document.querySelector(".move-team-item");
-//let boldPic = document.querySelector(".strong-pic");
-//let lightPic = document.querySelector(".light-pic");
+let join = document.querySelector(".move-team-item");
+let boldPic = document.querySelector(".strong-pic");
+let lightPic = document.querySelector(".light-pic");
 let twinPicArrTlusty = ["bar-chart", "bota_tlusta" ,"influence_tlusta" ,"kabel_tlusty", "360_tlusta"];
 let twinPicArrTenky = ["bar-chart_tenka", "bota_tenka","influence_tenka" ,"kabel_tenky", "360_tenka"];
-//let twinSlider = document.querySelector(".slide-wrapper");
+let twinSlider = document.querySelector(".slide-wrapper");
 let marginXSlider = 435;
-//let readMoreBtns = document.querySelectorAll(".read-more-btn");
+let readMoreBtns = document.querySelectorAll(".read-more-btn");
 let carousel = document.querySelector("#carouselExampleIndicators");
 let coverImgSize;
 
@@ -71,10 +71,10 @@ function carouselAutoOnOrOff() {
 
 
 window.onscroll = () => {
-    //scaleVideo(state);
+    scaleVideo(state);
     getCoverImageSize();
-    //carouselAutoOnOrOff();
-    //changeVideo();
+    carouselAutoOnOrOff();
+    changeVideo();
     current = document.querySelector(".active");
     if(current) {
         if(state == "srdce") {
@@ -119,7 +119,7 @@ window.onscroll = () => {
         }
     }
 }
-/*
+
 readMoreBtns.forEach( readBtn => {
     readBtn.onclick = (e) => {
         e.target.nextSibling.style.transition = "3s ease";
@@ -127,7 +127,7 @@ readMoreBtns.forEach( readBtn => {
         e.target.style.display = "none";
     }
 })
-*/
+
 function changePictures() {
     if(i % 2 == 0) {
         document.querySelector(".masthead").style.background = `url(${picturePaths[0]})`;
@@ -148,10 +148,10 @@ let controls = document.querySelectorAll(".car-con");
 
 controls.forEach( control => {
     control.onclick = () => {
-        //changeVideo();
+        changeVideo();
     }
 })
-/*
+
 function scaleVideo(state) {
     if ((windowWidht < 700) && (state=="motor")) {
         document.querySelector(".promo-video").style.transform = "scale(2.1)";
@@ -195,7 +195,7 @@ function changeVideo() {
         }
     })
 }
-*/
+
 function changeColorOfActiveLinks(color) {
     navMenuItems.forEach( item => {
         item.onmouseenter = () => {
@@ -206,13 +206,13 @@ function changeColorOfActiveLinks(color) {
         }  
     })
 }
-/*
+
 function changeColor0fReadMoreButtons(color) {
     readMoreBtns.forEach( readMoreBtn => {
         readMoreBtn.style.color = color;
     })
 }
-*/
+
 function cursorColor(x) {
     if(x=="motor") {
         join.onmouseenter = () => {
@@ -242,7 +242,7 @@ function changePictures(pic, arr) {
         }, 6000 * i)
     }
 }
-/*
+
 function changeSlideMenu() {
     for(let i = 0; i < 6; i++){
         setTimeout(()=> {
@@ -256,19 +256,19 @@ function changeSlideMenu() {
         }, 6000 * i)
     }
 }
-*/
+
 window.onresize = () =>{
-    //scaleVideo(state);
+    scaleVideo(state);
     getCoverImageSize();
 }
 
 window.onload = () => {
-    //makeReadMoreTouchable();
-    //scaleVideo(state);
-    //cursorColor(state);
-    //changePictures(boldPic, twinPicArrTlusty);
-    //changePictures(lightPic, twinPicArrTenky);
-    //changeSlideMenu();
+    makeReadMoreTouchable();
+    scaleVideo(state);
+    cursorColor(state);
+    changePictures(boldPic, twinPicArrTlusty);
+    changePictures(lightPic, twinPicArrTenky);
+    changeSlideMenu();
     document.querySelector(".anim-logo-dn").style.transform = "translateX(52.85%)";
     document.querySelector(".anim-logo-ai").style.transform = "translateX(-52.85%)";
 }
