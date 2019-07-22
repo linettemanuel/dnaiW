@@ -7,17 +7,47 @@ let i = 0;
 let current = document.querySelector(".active");
 let state = "motor";
 let windowWidht = window.innerWidth;
-let join = document.querySelector(".move-team-item");
-let boldPic = document.querySelector(".strong-pic");
-let lightPic = document.querySelector(".light-pic");
+//let join = document.querySelector(".move-team-item");
+//let boldPic = document.querySelector(".strong-pic");
+//let lightPic = document.querySelector(".light-pic");
 let twinPicArrTlusty = ["bar-chart", "bota_tlusta" ,"influence_tlusta" ,"kabel_tlusty", "360_tlusta"];
 let twinPicArrTenky = ["bar-chart_tenka", "bota_tenka","influence_tenka" ,"kabel_tenky", "360_tenka"];
-let twinSlider = document.querySelector(".slide-wrapper");
+//let twinSlider = document.querySelector(".slide-wrapper");
 let marginXSlider = 435;
-let readMoreBtns = document.querySelectorAll(".read-more-btn");
+//let readMoreBtns = document.querySelectorAll(".read-more-btn");
 let carousel = document.querySelector("#carouselExampleIndicators");
+let coverImgSize;
 
 let hasVisited = sessionStorage.getItem('washere');
+checkIfVisitedForFirstTime();
+getCoverImageSize();
+
+function getCoverImageSize() {
+    carouselItems.forEach( item  => {
+        if (item.classList.contains("active")) {
+            coverImgSize = (item.children[0].height - 50);
+        }
+        item.children[1].style.height = coverImgSize + "px";
+        if (window.innerWidth >= 500 && window.innerWidth < 1000) {
+            item.children[1].children[0].style.top = (coverImgSize / 10 * 2) + "px";
+        } else {
+            item.children[1].children[0].style.top = (coverImgSize / 10 * 6) + "px";  
+        }
+    })
+
+}
+
+function makeReadMoreTouchable() {
+    readMoreBtns.forEach ( btn => {
+        btn.ontouchstart = (e) => {
+           if(e.target.nextSibling.classList.contains("read-more")) {
+                e.target.nextSibling.style.transition = "3s ease";
+                e.target.nextSibling.style.display = "inline";
+                e.target.style.opacity = 0;
+           }
+        }
+    })
+}
 
 function checkIfVisitedForFirstTime() {
     if ( ! hasVisited ) {
@@ -41,8 +71,10 @@ function carouselAutoOnOrOff() {
 
 
 window.onscroll = () => {
-    carouselAutoOnOrOff();
-    changeVideo();
+    //scaleVideo(state);
+    getCoverImageSize();
+    //carouselAutoOnOrOff();
+    //changeVideo();
     current = document.querySelector(".active");
     if(current) {
         if(state == "srdce") {
@@ -87,18 +119,15 @@ window.onscroll = () => {
         }
     }
 }
-
+/*
 readMoreBtns.forEach( readBtn => {
-    readBtn.onmouseenter = (e) => {
-        e.target.nextSibling.style.display = "block";
-        e.target.style.opacity = 0;
-    }
-    readBtn.onmouseleave = (e) => {
-        e.target.nextSibling.style.display = "none";
-        e.target.style.opacity = 1;
+    readBtn.onclick = (e) => {
+        e.target.nextSibling.style.transition = "3s ease";
+        e.target.nextSibling.style.display = "inline";
+        e.target.style.display = "none";
     }
 })
-
+*/
 function changePictures() {
     if(i % 2 == 0) {
         document.querySelector(".masthead").style.background = `url(${picturePaths[0]})`;
@@ -119,10 +148,10 @@ let controls = document.querySelectorAll(".car-con");
 
 controls.forEach( control => {
     control.onclick = () => {
-        changeVideo();
+        //changeVideo();
     }
 })
-
+/*
 function scaleVideo(state) {
     if ((windowWidht < 700) && (state=="motor")) {
         document.querySelector(".promo-video").style.transform = "scale(2.1)";
@@ -166,7 +195,7 @@ function changeVideo() {
         }
     })
 }
-
+*/
 function changeColorOfActiveLinks(color) {
     navMenuItems.forEach( item => {
         item.onmouseenter = () => {
@@ -177,13 +206,13 @@ function changeColorOfActiveLinks(color) {
         }  
     })
 }
-
+/*
 function changeColor0fReadMoreButtons(color) {
     readMoreBtns.forEach( readMoreBtn => {
         readMoreBtn.style.color = color;
     })
 }
-
+*/
 function cursorColor(x) {
     if(x=="motor") {
         join.onmouseenter = () => {
@@ -213,7 +242,7 @@ function changePictures(pic, arr) {
         }, 6000 * i)
     }
 }
-
+/*
 function changeSlideMenu() {
     for(let i = 0; i < 6; i++){
         setTimeout(()=> {
@@ -227,18 +256,19 @@ function changeSlideMenu() {
         }, 6000 * i)
     }
 }
-
+*/
 window.onresize = () =>{
-    scaleVideo(state);
+    //scaleVideo(state);
+    getCoverImageSize();
 }
 
 window.onload = () => {
-    scaleVideo(state);
-    cursorColor(state);
-    changePictures(boldPic, twinPicArrTlusty);
-    changePictures(lightPic, twinPicArrTenky);
-    changeSlideMenu();
-    checkIfVisitedForFirstTime();
+    //makeReadMoreTouchable();
+    //scaleVideo(state);
+    //cursorColor(state);
+    //changePictures(boldPic, twinPicArrTlusty);
+    //changePictures(lightPic, twinPicArrTenky);
+    //changeSlideMenu();
     document.querySelector(".anim-logo-dn").style.transform = "translateX(52.85%)";
     document.querySelector(".anim-logo-ai").style.transform = "translateX(-52.85%)";
 }
