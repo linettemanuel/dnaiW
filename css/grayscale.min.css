@@ -74,7 +74,7 @@ h6 {
 .black-box {
     position: absolute;
     display: block;
-    width: 22.5vh;
+    width: 17.5vw;
     background: black;
     right: 0;
     height: 100%;
@@ -198,7 +198,8 @@ h6 {
 }
 
 .twin-artical p {
-    font-size: 14px;
+    font-size: 16px;
+    margin-bottom: 5rem;
     font-weight: 300;
     line-height: 22px;
 }
@@ -270,7 +271,7 @@ h6 {
 
 .contact-section {
     padding: 5rem 0;
-    background: rgb(10, 10, 11); 
+    background: #303037; 
 }
 
 .contact-section .card {
@@ -422,8 +423,9 @@ footer {
 }
 
 .middle-text {
-    position: relative;
-    top: -50%;
+    position: absolute;
+    margin-top: -20%;
+    width: 100%;
 }
 
 .w-20 {
@@ -437,15 +439,15 @@ footer {
     padding-top: 4rem;
 }
 .vision {
-    background-color: black;
+    background-color: #0a0a0b;
     min-height: 250px;
     display: block;
-    height: inherit;
+    height: 35vw;
     min-height: 250px;   
 }
 
 .vision-two {
-    background-color: rgb(32, 31, 37);  
+    background-color: #1d1c21;  
     min-height: 250px;
     display: block;
     height: inherit;
@@ -469,10 +471,12 @@ footer {
 .vision:hover img {
     display: none;
     opacity: 0;
+    margin-top: 26vw;
+    margin-left: 10%;
 }
 
 .vision:hover  {
-    cursor: url("../img/cursor2.png"), pointer;
+    cursor:  pointer;
 }
 
 .vision-two:hover .inner-text  {
@@ -484,24 +488,29 @@ footer {
 .vision:hover .img-two {
     display: none;
     opacity: 0;
+    margin-left: 10%;
+    margin-top: 15vw;
 }
 
 .vision img {
     display: block;
-    width: 75%;
+    width: 56%;
     margin: auto;
+    margin-top: 16%;
 }
 
 .vision .img-two {
     display: block;
-    width: 50%;
+    width: 42%;
     margin: auto;
+    margin-top: 6%;
 }
 
 .vision:hover h2 {
     width: 80%;
     text-align: left;
     margin-top: 0;
+    margin-left: 10%;
     font-size: 20px;
     display: block;
     position: relative;
@@ -545,27 +554,33 @@ footer {
 .vision-two:hover img {
     display: none;
     opacity: 0;
+    margin-left: 10%;
+    margin-top: 19vw;
 }
 
 .vision-two:hover  {
-    cursor: url("../img/cursor.png"), pointer;
+    cursor: pointer;
 }
 
 .vision-two:hover .img-two {
     display: none;
     opacity: 0;
+    margin-top: 26vw;
+    margin-top: 31%;
 }
 
 .vision-two img {
     display: block;
-    width: 40%;
+    width: 37%;
     margin: auto;
+    margin-top: 11%;
 }
 
 .vision-two .img-two {
     display: block;
-    width: 40%;
+    width: 28%;
     margin: auto;
+    margin-top: 14%;
 }
 
 .vision-two h2, .vision h2 {
@@ -575,6 +590,7 @@ footer {
 .vision-two:hover h2 {
     width: 80%;
     text-align: left;
+    margin-left: 10%;
     margin-top: 0;
     font-size: 20px;
     display: block;
@@ -621,19 +637,13 @@ footer {
 }
 
 .move-team-item:hover {
-    cursor: url(../img/cursor3.png), pointer;
-    transform: scale(1.1);
-    transition: 1s ease;
+    cursor: pointer;
 }
 
 .move-team-item h5 {
     text-align: left;
 }
 
-.move-team-item:hover h5 {
-    transition: 4s ease;
-    text-align: center;
-}
 
 .team-item img {
     position: relative;
@@ -646,11 +656,6 @@ footer {
     opacity: 0;
 }
 
-.move-team-item:hover img {
-    opacity: 1;
-    transition: 1s ease;
-    margin: auto;
-}
 
 .tech-text {
     text-align: center;
@@ -678,7 +683,7 @@ footer {
 }
 .digital {
     height: inherit;
-    transform: skew(30deg);
+    transform: skew(24deg);
 }
 
 .digital:first-child .twin-artical .featured-text {
@@ -700,7 +705,7 @@ footer {
 
 .digital .row {
     height: 100%;
-    transform: skew(-30deg);
+    transform: skew(-24deg);
 }
 
 .digital .twin-artical {
@@ -761,7 +766,7 @@ footer {
     width: 27vw;
     margin: 0 auto;
     position: relative;
-    left: -17vw;
+    left: -14vw;
     top: 3vh;
 }
 
@@ -770,7 +775,7 @@ footer {
     height: 330px;
     position: relative;
     display: block;
-    width: 2610px;
+    width: max-content;
 }
 
 #slideshow .slide-wrapper .slide {
@@ -806,6 +811,115 @@ footer {
     width: 90vw;
 }
 
+.copy {
+    opacity: 1;
+}
+  
+.bank-details-item {
+    display: grid;
+    grid-template-columns: 35% 50% 15%;
+    justify-content: space-around;
+}
+
+.bank-details-item-name {
+    font-size: 14px;
+    text-align:left;
+    margin: auto 0;
+    color: #c0c9d0;
+}
+
+
+input[type="text"] {
+    background-color: transparent;
+    font-size: 14px;
+    color: white;
+    text-align: left;
+    margin: auto 0;
+    margin-left: 0.5rem;
+    width: 98%;
+    border:none;
+}
+
+input[type="text"]:focus {
+    outline: none;
+    background: transparent;
+}
+
+input[type="text"]:active {
+    outline: none;
+    background: transparent;
+}
+
+input[type="text"]:hover {
+    cursor: copy;
+    color: #c0c9d0;
+}
+
+.bank-details-item .tooltip i {
+    margin: auto auto;
+    margin-left: 0.75rem;
+    border-radius: 50%;
+    padding: 0.4rem;
+    cursor: pointer;
+    color: #c0c9d0;
+    transition: 1s all ease;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    opacity: 1;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 50px;
+    background-color: #c0c9d0;
+    border-radius: 20px;
+    color: #2a2d2e;
+    text-align: center;
+    padding: 3px;
+    position: absolute;
+    z-index: 1;
+    bottom: 0%;
+    margin-left: 2.5rem;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+.tooltiptext-confirm {
+    visibility: hidden;
+    width: 60px;
+    background-color: #54f9ba;
+    border-radius: 20px;
+    color: #2a2d2e;
+    text-align: center;
+    padding: 3px;
+    position: absolute;
+    z-index: 1;
+    bottom: 0%;
+    margin-left: 2.5rem;
+}
+
+.signup-section ul {
+    padding-left: 0;
+}
+
+.signup-section ul li {
+    list-style: none;
+}
+
+.signup-section ul li p::before {
+    content: "";
+    width: 0.01vw;
+    height: 0.01vw;
+    background-color: rgba(255,255,255,.5);
+    display: inline-block;
+    border-radius: 42%;
+    padding: 0.11rem;
+    margin-right: 0.8vw;
+    transform: translateY(-0.125vw);
+}
+
 
 
 
@@ -826,6 +940,18 @@ footer {
 @media (min-width:768px) {
 	.masthead h1 {
 		font-size: 5.2vw;
+    }
+    .bank-details-item .tooltip i:hover {
+        color: #2a2d2e;
+        background-color: #c0c9d0;
+        box-shadow: 0.5px 0.5px 10px #c0c9d0;
+        transform: scale(1.1);
+        transition: 1s all ease;
+    }
+
+    .tooltip:hover .tooltiptext {
+        visibility: visible;
+        opacity: 1;
     }
 }
 @media (max-width:767px) {
@@ -1165,11 +1291,6 @@ footer {
         padding-top: 100%;
     }
 
-    .move-team-item:hover img {
-        transform: translate(150%, 50%);
-        display: block;
-    }
-
 }
 @media (min-width: 1600px) {
     .container {
@@ -1295,46 +1416,13 @@ footer {
     opacity: 1;
 }
 
-#preloader {
-    display: block;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: -10;
-    width: 100vw;
-    height: 100vh;
-    background-color: black;
-    opacity: 0;
-}
-
-#preloader .container{
-    position: relative;
-    max-width: 100vw;
-    width: 80%;
-}
-
-#preloader .anim-logo {
-    transition: 3s  ease;
-    position: relative;
-    width: 100%;
-    top: 37.5vh;
-}
-#preloader .proloader-cap {
-    font-family: "GT America";
-    transition: 1s  ease;
-    position: relative;
-    top: -15vh;
-    font-size: 2vw;
-    font-weight: 100;
-    opacity: 0;
-}
-
 .read-more-btn {
     color: #64a19d;
 }
 
 .read-more-btn:hover {
     text-decoration: underline;
+    cursor: pointer;
 }
 
 .read-more {
