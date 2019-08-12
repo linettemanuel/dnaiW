@@ -217,7 +217,7 @@ h6 {
 }
 
 .vision-section {
-	padding: 3rem 0rem;
+	/* padding: 3rem 0rem; */
 	background: rgb(10, 10, 11);
 }
 
@@ -1342,11 +1342,11 @@ input[type="text"]:hover {
         font-size: 0.9vw;
         line-height: 1.35vw;
     }
-
+    /*
     .vision-section {
         padding: 8rem 0;
     }
-
+    */
     .vision-section p {
         font-size: 1vw;
         line-height: 1.5vw;
