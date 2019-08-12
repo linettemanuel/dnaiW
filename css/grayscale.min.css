@@ -1352,6 +1352,11 @@ input[type="text"]:hover {
         line-height: 1.5vw;
     }
 
+    .digital:first-child .twin-artical p {
+        font-size: 1vw;
+        line-height: 1.5vw;
+    }
+
     .vision:hover .show-up p {
         font-size: 1vw;
         line-height: 1.5vw;
@@ -1380,7 +1385,7 @@ input[type="text"]:hover {
 
 
     .signup-section p {
-        font-size: 1.2vw;
+        font-size: 0.8vw;
         line-height: 2.4vw;
     }
 
