@@ -47,6 +47,10 @@ h6 {
     letter-spacing: -0.16px;
 }
 
+ul {
+    list-style-position: outside;
+  }
+
 
 .team-item {
     width: 400px;
@@ -255,6 +259,7 @@ h6 {
     margin-bottom: 0.25rem;
     font-weight: 300;
     line-height: 30px;
+    transform: translate(16px, -11px);
 }
 
 .signup-section .form-inline input {
@@ -906,18 +911,20 @@ input[type="text"]:hover {
 
 .signup-section ul li {
     list-style: none;
+    display: table-row;
 }
 
 .signup-section ul li p::before {
     content: "";
     width: 0.01vw;
     height: 0.01vw;
+    position: absolute;
     background-color: rgba(255,255,255,.5);
-    display: inline-block;
+    display: table-cell;
     border-radius: 42%;
     padding: 0.11rem;
     margin-right: 0.8vw;
-    transform: translateY(-0.125vw);
+    transform: translate(-1.9vh, 14px);
 }
 
 
@@ -1387,6 +1394,10 @@ input[type="text"]:hover {
     .signup-section p {
         font-size: 0.8vw;
         line-height: 2.4vw;
+    }
+
+    .signup-section ul li p::before {
+        transform: translate(-1.9vh, 1.2vw);
     }
 
     .move-team-item  {
