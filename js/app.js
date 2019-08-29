@@ -20,6 +20,31 @@ let copyParents = document.querySelectorAll(".tooltip");
 let copy = document.querySelectorAll(".copy");
 let copyIcon = document.querySelectorAll(".fa-copy");
 let copyConfirm = document.querySelectorAll(".tooltiptext-confirm");
+let hamburgerIcon = document.querySelector(".hamburger-icon");
+let iconPath = ["img/hamburger.svg", "img/close.svg"];
+let menuCounter = 0;
+let scewedMenu = document.querySelector(".scewedMenu");
+
+hamburgerIcon.onclick = (e) => {
+    menuCounter++;
+    if(menuCounter % 2 == 0) {
+        e.target.src ="./" + `${iconPath[0]}`;
+        scewedMenu.style.transition = "1s ease-in-out";
+        navMenu.style.transition = "0.5s ease-in-out";
+        scewedMenu.style.transform = "translateX(100%)";
+        navMenu.style.transform = "translateX(200%)";
+        scewedMenu.style.zIndex = -1;
+        navMenu.style.zIndex = -1;
+    } else {
+        e.target.src ="./" + `${iconPath[1]}`;
+        scewedMenu.style.transform = "translateX(0%)";
+        navMenu.style.transform = "translateX(0%)";
+        scewedMenu.style.transition = "1s ease-in-out";
+        navMenu.style.transition = "1.25s ease-in-out";
+        scewedMenu.style.zIndex = 1001;
+        navMenu.style.zIndex = 1002;
+    }
+}
 
 
 getCoverImageSize();
