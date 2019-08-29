@@ -95,7 +95,13 @@ ul {
 
 #mainNav {
 	min-height: 56px;
-	background-color: transparent;
+    background-color: transparent;
+}
+
+.navbar-expand-lg .navbar-nav {
+    margin-left: 63.5%;
+    flex-direction: column;
+    transform: translateX(200%);
 }
 
 #mainNav .navbar-toggler {
@@ -117,6 +123,8 @@ ul {
     width: 50%;
 }
 #mainNav .navbar-brand img {
+    position: absolute;
+    top: 6vh;
 	width: 40%;
 }
 
@@ -132,9 +140,34 @@ ul {
 	background-color: transparent
 }
 
+#mainNav .navbar-brand .hamburger-icon {
+    width: 2.5vw;
+    z-index: 100000000000;
+    position: absolute;
+    top:6vh;
+    left: 91vw;
+}
+
+#mainNav .navbar-brand .hamburger-icon:hover {
+    cursor: pointer;
+}
+
 .values-cap {
     width: 80%;
 }
+
+#mainNav .navbar-collapse {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    top: -1vh;
+    right: -8vw;
+}
+
+.scewedMenu {
+    transform: translateX(100%);
+}
+
 
 
 .masthead {
@@ -150,7 +183,6 @@ ul {
 	font-size: 5.2vw;
     color: white;  
     font-weight: 700;
-    letter-spacing: -1.8px;
     line-height: 90px;
 }
 
@@ -161,9 +193,7 @@ ul {
     font-weight: 300;
 }
 
-.btn {
-	-webkit-box-shadow: 0 .1875rem .1875rem 0 rgba(0, 0, 0, .1)!important;
-	box-shadow: 0 .1875rem .1875rem 0 rgba(0, 0, 0, .1)!important;
+.btn { 
 	padding: 1.25rem 2rem;
 	font-family: 'Varela Round';
 	font-size: 80%;
@@ -358,7 +388,7 @@ footer {
 .scroll-button {
     position: relative;
     display: block;
-    bottom: 7vh;
+    bottom: 4vh;
     width: 90vw;
     left: -5.6vw;
 }
@@ -429,7 +459,7 @@ footer {
 
 .middle-text {
     position: absolute;
-    margin-top: -20%;
+    margin-top: -25%;
     width: 100%;
 }
 
@@ -637,7 +667,8 @@ footer {
     position: relative;
     display: block;
     top: 0;
-    width: 100%;
+    width: 80%;
+    margin-left: 10%;
     height: 100%;
 }
 
@@ -874,6 +905,7 @@ input[type="text"]:hover {
     position: relative;
     display: inline-block;
     opacity: 1;
+    z-index: 0;
 }
 
 .tooltip .tooltiptext {
@@ -927,6 +959,15 @@ input[type="text"]:hover {
     transform: translate(-1.9vh, 14px);
 }
 
+.vrsl-text {
+    margin-top: -15%;
+}
+
+svg {
+    position: fixed;
+    right: 0;
+    z-index: 1001;
+}
 
 
 
@@ -946,7 +987,7 @@ input[type="text"]:hover {
 
 @media (min-width:768px) {
 	.masthead h1 {
-		font-size: 5.2vw;
+		font-size: 3.2vw;
     }
     .bank-details-item .tooltip i:hover {
         color: #2a2d2e;
@@ -1088,7 +1129,8 @@ input[type="text"]:hover {
         width: 15%;
         display: block;
         position: absolute;
-        top: 0;
+        top: -10%;
+        left: 8%;
         opacity: 1;
     }
     .vision:hover .img-two {
@@ -1173,7 +1215,7 @@ input[type="text"]:hover {
         color: rgba(255, 255, 255, .5);
         width: auto;
     }
-    #mainNav .navbar-brand img{
+    #mainNav .navbar-brand img {
         width: 7.7vw;
     }
     .navbar-expand-lg > .container {
@@ -1182,14 +1224,15 @@ input[type="text"]:hover {
     }
     
 	#mainNav .nav-link {
-        font-size: 0.7rem;
+        font-size: 1.4rem;
         font-family: "GT America";
         text-transform: capitalize;
-		-webkit-transition: none;
+        -webkit-transition: none;
         transition: none;
+        text-align: right;
         font-weight: 700;
-        padding: 50px 32px;
-		color: white;
+        padding: 11px 32px;
+        color: white;    
 	}
 	#mainNav .nav-link:hover {
 		color: rgba(255, 255, 255, .75)
@@ -1198,12 +1241,12 @@ input[type="text"]:hover {
 		color: #fff
     }
     #mainNav.navbar-shrink {
-		background: black;
+		/*background: black;*/
     }
     
 	#mainNav.navbar-shrink .nav-link {
 		color: #fff;
-		padding: 1.5rem 32px 1.25rem;
+		padding: 11px 32px;
 		border-bottom: .25rem solid transparent
 	}
 	#mainNav.navbar-shrink .nav-link:active {
@@ -1268,14 +1311,27 @@ input[type="text"]:hover {
         padding: 15rem 0;
 	    min-height: 35rem;
         padding: 0;
+    }
+    
+    .masthead p {
+        width: 70%;
+        margin-left: 10%;
+        border-top: 1.5px solid rgba(255, 255, 255, .5);
+        padding: 1rem 0;
+        margin-top: 15%;
 	}
 	.masthead h1 {
-		font-size: 5.2vw;
+		font-size: 2.5rem;
+        line-height: 1.2;
+        width: 80%;
+        margin-left: 10%;
 	}
 	.masthead h2 {
 		max-width: 34.7vw;
-        font-size: 15px;
-        margin: 16px 0;
+        font-size: 1.25rem;
+        font-weight: 100;
+        width: 65%;
+        margin-left: 10%;
     }
     .technology {
         width: 75%;
@@ -1304,7 +1360,7 @@ input[type="text"]:hover {
         max-width: 85vw;
     }
     .masthead h1 {
-        font-size: 5.2vw;
+        font-size: 3.2vw;
     }
 
     .masthead h2 {
