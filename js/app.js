@@ -22,28 +22,53 @@ let copyIcon = document.querySelectorAll(".fa-copy");
 let copyConfirm = document.querySelectorAll(".tooltiptext-confirm");
 let hamburgerIcon = document.querySelector(".hamburger-icon");
 let iconPath = ["img/hamburger.svg", "img/close.svg"];
-let menuCounter = 0;
+let menuOpened = false;
 let scewedMenu = document.querySelector(".scewedMenu");
+let mainContent = document.querySelector(".main-content");
 
 hamburgerIcon.onclick = (e) => {
-    menuCounter++;
-    if(menuCounter % 2 == 0) {
+    if(menuOpened) {
         e.target.src ="./" + `${iconPath[0]}`;
-        scewedMenu.style.transition = "1s ease-in-out";
-        navMenu.style.transition = "0.5s ease-in-out";
+        scewedMenu.style.transition = "transform 1.5s ease-in-out";
+        navMenu.style.transition = "all 1s ease-in-out";
         scewedMenu.style.transform = "translateX(100%)";
         navMenu.style.transform = "translateX(200%)";
         scewedMenu.style.zIndex = -1;
         navMenu.style.zIndex = -1;
+        menuOpened = false;
     } else {
         e.target.src ="./" + `${iconPath[1]}`;
         scewedMenu.style.transform = "translateX(0%)";
         navMenu.style.transform = "translateX(0%)";
-        scewedMenu.style.transition = "1s ease-in-out";
-        navMenu.style.transition = "1.25s ease-in-out";
+        scewedMenu.style.transition = "transform 1s ease-in-out";
+        navMenu.style.transition = "transform 1.25s ease-in-out";
         scewedMenu.style.zIndex = 1001;
         navMenu.style.zIndex = 1002;
+        menuOpened = true;
     }
+} 
+
+hamburgerIcon.onmouseover = (e) => {
+    menuOpened = true;
+    e.target.src ="./" + `${iconPath[1]}`;
+    scewedMenu.style.transform = "translateX(0%)";
+    navMenu.style.transform = "translateX(0%)";
+    scewedMenu.style.transition = "transform 1s ease-in-out";
+    navMenu.style.transition = "transform 1.25s ease-in-out";
+    scewedMenu.style.zIndex = 1001;
+    navMenu.style.zIndex = 1002;
+
+}
+
+mainContent.onmouseover= (e) => {
+    menuOpened = false;
+    hamburgerIcon.src ="./" + `${iconPath[0]}`;
+    scewedMenu.style.transition = "transform 1.5s ease-in-out";
+    navMenu.style.transition = "all 1s ease-in-out";
+    scewedMenu.style.transform = "translateX(100%)";
+    navMenu.style.transform = "translateX(200%)";
+    scewedMenu.style.zIndex = -1;
+    navMenu.style.zIndex = -1;
 }
 
 
