@@ -1742,6 +1742,9 @@ h4 {
   #mainNav .nav-link:hover {
     color: rgba(255, 255, 255, 0.35);
   }
+  #mainNav .navbar-brand img {
+    left: 4%;
+  }
 }
 
 .read-more-btn {
