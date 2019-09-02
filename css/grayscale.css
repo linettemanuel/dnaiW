@@ -530,30 +530,6 @@ footer {
   font-size: 14px;
 }
 
-.vision:hover img {
-  display: none;
-  opacity: 0;
-  margin-top: 26vw;
-  margin-left: 10%;
-}
-
-.vision:hover {
-  cursor: pointer;
-}
-
-.vision-two:hover .inner-text {
-  position: absolute;
-  display: block;
-  top: 20%;
-}
-
-.vision:hover .img-two {
-  display: none;
-  opacity: 0;
-  margin-left: 2%;
-  margin-top: 10vw;
-}
-
 .vision img {
   display: block;
   width: 56%;
@@ -568,37 +544,9 @@ footer {
   margin-top: 6%;
 }
 
-.vision:hover h2 {
-  width: 80%;
-  text-align: left;
-  margin-top: 0;
-  margin-left: 10%;
-  font-size: 20px;
-  display: block;
-  position: relative;
-  top: -20px;
-}
-
 .vision .show-up {
   display: none;
   opacity: 0;
-}
-
-.vision:hover .show-up {
-  display: block;
-  position: relative;
-  opacity: 1;
-  padding-bottom: 2rem;
-}
-
-.vision:hover .show-up p {
-  font-family: "GT America Extended";
-  font-weight: 300;
-  text-align: left;
-  margin-bottom: 0;
-  font-size: 19px;
-  width: 80%;
-  margin: auto;
 }
 
 .technology {
@@ -612,25 +560,6 @@ footer {
 }
 
 /* vision two hover */
-.vision-two:hover img {
-  display: none;
-  opacity: 0;
-  margin-left: 18%;
-  margin-top: 19vw;
-}
-
-.vision-two:hover {
-  cursor: pointer;
-}
-
-.vision-two:hover .img-two {
-  display: none;
-  opacity: 0;
-  margin-top: 26vw;
-  margin-top: 31%;
-  margin-left: 10%;
-}
-
 .vision-two img {
   display: block;
   width: 37%;
@@ -649,45 +578,9 @@ footer {
   text-align: center;
 }
 
-.vision-two:hover h2 {
-  width: 80%;
-  text-align: left;
-  margin-left: 10%;
-  margin-top: 0;
-  font-size: 20px;
-  display: block;
-  position: relative;
-  top: -20px;
-}
-
 .vision-two .show-up {
   display: none;
   opacity: 0;
-}
-
-.vision-two:hover .show-up {
-  display: block;
-  position: relative;
-  opacity: 1;
-  padding-bottom: 2rem;
-}
-
-.vision-two:hover .show-up p {
-  font-family: "GT America Extended";
-  font-weight: 300;
-  text-align: left;
-  margin-bottom: 0;
-  font-size: 19px;
-  width: 80%;
-  margin: auto;
-}
-
-.vision:hover .inner-text {
-  margin-top: 3.2rem;
-}
-
-.vision-two:hover .inner-text {
-  margin-top: 3.2rem;
 }
 
 .inner-text {
@@ -1173,51 +1066,7 @@ svg {
   .mt-lg-16 {
     margin-top: 8rem;
   }
-  .vision:hover img {
-    width: 15%;
-    display: block;
-    position: absolute;
-    top: -10%;
-    left: 8%;
-    opacity: 1;
-  }
-  .vision:hover .img-two {
-    width: 10%;
-    display: block;
-    position: absolute;
-    top: 0;
-    opacity: 1;
-  }
   /* vision two hover */
-  .vision-two:hover img {
-    width: 10%;
-    display: block;
-    position: absolute;
-    top: 0;
-    opacity: 1;
-  }
-  .vision-two:hover .img-two {
-    width: 7.5%;
-    display: block;
-    position: absolute;
-    top: 0;
-    opacity: 1;
-  }
-  .vision:hover .inner-text {
-    margin-top: 0;
-    position: relative;
-    display: block;
-    top: 25%;
-  }
-  .vision-two:hover .inner-text {
-    margin-top: 0;
-    position: relative;
-    display: block;
-    top: 25%;
-  }
-  .vision-two:hover .inner-text {
-    margin-top: 0;
-  }
 }
 
 .projects-section .project-text {
@@ -1438,26 +1287,6 @@ svg {
     font-size: 1vw;
     line-height: 1.5vw;
   }
-  .vision:hover .show-up p {
-    font-size: 1vw;
-    line-height: 1.5vw;
-  }
-  .vision-two:hover .show-up p {
-    font-size: 1vw;
-    line-height: 1.5vw;
-  }
-  .vision:hover h2 {
-    font-size: 1.3vw;
-  }
-  .vision-two:hover h2 {
-    font-size: 1.3vw;
-  }
-  .vision-two:hover .img-two {
-    bottom: -27vh;
-  }
-  .vision-two:hover img {
-    bottom: -20vh;
-  }
   .signup-section p {
     font-size: 0.8vw;
     line-height: 2.4vw;
@@ -1496,7 +1325,8 @@ svg {
 }
 
 .read-more-btn {
-  color: #64a19d;
+  color: rgba(255, 255, 255, 0.55);
+  text-decoration: underline;
 }
 
 .read-more-btn:hover {
@@ -1646,4 +1476,275 @@ h4 {
   margin: 0px;
   padding: 0px;
   width: 100%;
+}
+
+/* Linette */
+#mainNav .navbar-brand .hamburger-icon {
+  width: 1.35vw;
+  left: 93vw;
+}
+
+.masthead {
+  background: transparent;
+}
+
+.vision-section {
+  background: #0a0a0b;
+  background-image: url(../img/348.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+}
+
+.vision {
+  background-color: rgba(10, 10, 10, 0.6);
+  min-height: 250px;
+  display: block;
+  height: 25vw;
+  min-height: 250px;
+}
+
+.vision-two {
+  background-color: rgba(29, 28, 33, 0.6);
+  min-height: 250px;
+  display: block;
+  height: inherit;
+  min-height: 250px;
+}
+
+.scroll-button {
+  bottom: -12vh;
+}
+
+.vision-section img {
+  width: 3.85vw;
+  min-width: 50px;
+}
+
+.vision-section p {
+  font-size: 16px;
+  margin-bottom: 5rem;
+  font-weight: 300;
+  line-height: 22px;
+}
+
+.vision img {
+  display: none;
+  opacity: 0;
+  margin-top: 18vw;
+  margin-left: 10%;
+}
+
+.vision-two.inner-text {
+  position: absolute;
+  display: block;
+  top: 20%;
+}
+
+.vision .img-two {
+  display: none;
+  opacity: 0;
+  margin-left: 2%;
+  margin-top: 8vw;
+}
+
+.vision h2 {
+  width: 80%;
+  text-align: left;
+  margin-top: 0;
+  margin-left: 10%;
+  font-size: 20px;
+  display: block;
+  position: relative;
+  top: -20px;
+}
+
+.vision .show-up {
+  display: none;
+  opacity: 0;
+}
+
+.vision .show-up {
+  display: block;
+  position: relative;
+  opacity: 1;
+  padding-bottom: 2rem;
+}
+
+.vision .show-up p {
+  width: 100%;
+}
+
+.vision .show-up p {
+  font-family: "GT America Extended";
+  font-weight: 300;
+  text-align: left;
+  margin-bottom: 0;
+  font-size: 19px;
+  width: 80%;
+  margin: auto;
+}
+
+.vision-two:first-child .show-up p {
+  font-family: "GT America Extended";
+  font-weight: 300;
+  text-align: left;
+  margin-bottom: 0;
+  font-size: 19px;
+  width: 80%;
+  margin: auto;
+}
+
+.vision-two img {
+  display: none;
+  opacity: 0;
+  margin-left: 10%;
+  margin-top: 10vw;
+}
+
+.vision-two .img-two {
+  display: none;
+  opacity: 0;
+  margin-top: 26vw;
+  margin-top: 26%;
+  margin-left: 10.5%;
+}
+
+.vision-two h2 {
+  width: 80%;
+  text-align: left;
+  margin-left: 10%;
+  margin-top: 0;
+  font-size: 20px;
+  display: block;
+  position: relative;
+  top: -20px;
+}
+
+.vision-two .show-up {
+  display: block;
+  position: relative;
+  opacity: 1;
+  padding-bottom: 2rem;
+}
+
+.vision-two .show-up p {
+  font-family: "GT America Extended";
+  font-weight: 300;
+  text-align: left;
+  margin-bottom: 0;
+  font-size: 19px;
+  width: 80%;
+  margin: auto;
+}
+
+.vision .inner-text {
+  position: relative;
+  display: block;
+  top: 0;
+  width: 80%;
+  margin-left: 10%;
+  height: 100%;
+  margin-top: 3.2rem;
+}
+
+.vision-two .inner-text {
+  position: relative;
+  display: block;
+  top: 0;
+  width: 80%;
+  margin-left: 10%;
+  height: 100%;
+  margin-top: 3.2rem;
+}
+
+.vision-two .inner-text {
+  margin-top: 3.2rem;
+}
+
+#mainNav .navbar-collapse {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  top: -1vh;
+  right: -8vw;
+}
+
+.navbar-expand-lg .navbar-nav {
+  position: fixed;
+  left: 73.5vw;
+  height: 80vh;
+  margin: auto;
+  width: 21vw;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-transform: translateX(200%);
+  transform: translateX(200%);
+}
+
+.navbar-expand-lg .navbar-nav li:first-child {
+  margin-top: 4%;
+}
+
+@media (min-width: 992px) {
+  .vision img {
+    width: 15%;
+    display: block;
+    position: absolute;
+    top: -10%;
+    left: 8%;
+    opacity: 1;
+  }
+  .vision .img-two {
+    width: 10%;
+    display: block;
+    position: absolute;
+    top: 0;
+    opacity: 1;
+  }
+  /* vision two hover */
+  .vision-two img {
+    width: 10%;
+    display: block;
+    position: absolute;
+    top: 0;
+    opacity: 1;
+    margin-left: 18%;
+    margin-top: 13vw;
+  }
+  .vision-two .img-two {
+    width: 7.5%;
+    display: block;
+    position: absolute;
+    top: 0;
+    opacity: 1;
+  }
+  .vision .inner-text {
+    margin-top: 0;
+    position: relative;
+    display: block;
+    top: 25%;
+  }
+  .vision-two .inner-text {
+    margin-top: 0;
+    position: relative;
+    display: block;
+    top: 25%;
+  }
+  .vision-two .inner-text {
+    margin-top: 0;
+  }
+  #mainNav .nav-link {
+    padding: 1vh 0;
+  }
+  #mainNav .nav-link:hover {
+    color: rgba(255, 255, 255, 0.35);
+  }
+}
+
+.read-more-btn {
+  color: rgba(255, 255, 255, 0.55);
+  text-decoration: underline;
 }

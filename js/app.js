@@ -29,6 +29,7 @@ let mainContent = document.querySelector(".main-content");
 hamburgerIcon.onclick = (e) => {
     if(menuOpened) {
         e.target.src ="./" + `${iconPath[0]}`;
+        e.target.style.width = "2.6vw";
         scewedMenu.style.transition = "transform 1.5s ease-in-out";
         navMenu.style.transition = "all 1s ease-in-out";
         scewedMenu.style.transform = "translateX(100%)";
@@ -38,6 +39,7 @@ hamburgerIcon.onclick = (e) => {
         menuOpened = false;
     } else {
         e.target.src ="./" + `${iconPath[1]}`;
+        e.target.style.width = "1.35vw";
         scewedMenu.style.transform = "translateX(0%)";
         navMenu.style.transform = "translateX(0%)";
         scewedMenu.style.transition = "transform 1s ease-in-out";
@@ -51,6 +53,7 @@ hamburgerIcon.onclick = (e) => {
 hamburgerIcon.onmouseover = (e) => {
     menuOpened = true;
     e.target.src ="./" + `${iconPath[1]}`;
+    e.target.style.width = "1.35vw";
     scewedMenu.style.transform = "translateX(0%)";
     navMenu.style.transform = "translateX(0%)";
     scewedMenu.style.transition = "transform 1s ease-in-out";
@@ -63,6 +66,7 @@ hamburgerIcon.onmouseover = (e) => {
 mainContent.onmouseover= (e) => {
     menuOpened = false;
     hamburgerIcon.src ="./" + `${iconPath[0]}`;
+    hamburgerIcon.style.width = "2.6vw";
     scewedMenu.style.transition = "transform 1.5s ease-in-out";
     navMenu.style.transition = "all 1s ease-in-out";
     scewedMenu.style.transform = "translateX(100%)";
@@ -113,6 +117,7 @@ window.onscroll = () => {
     carouselAutoOnOrOff();
     changeVideo();
     current = document.querySelector(".active");
+    /*
     if(current) {
         if(state == "srdce") {
             navMenuItems.forEach( item => {
@@ -132,7 +137,7 @@ window.onscroll = () => {
 
         if(current.innerHTML == "team") {
             navMenuItems.forEach( item => {
-                /*item.style.color = "#1f1f21";*/
+                item.style.color = "#1f1f21";
                 if(item.innerHTML == "team"){
                     if(state=="srdce") {
                         item.style.color = "#D5392E";
@@ -141,10 +146,10 @@ window.onscroll = () => {
                     }
                 }         
             })
-            /*
+            
             logo.src = "img/dnai_dark.svg";
             logo.style.width = "47%";
-            */
+            
         } else {
             navMenuItems.forEach( item => {
                 if(item.innerHTML != current) {
@@ -155,6 +160,7 @@ window.onscroll = () => {
             logo.style.width = "";
         }
     }
+    */
 }
 
 readMoreBtns.forEach( readBtn => {
@@ -249,8 +255,8 @@ function changeVideo() {
             }
             windowWidht = window.innerWidth;
             scaleVideo(state);
-            changeColorOfActiveLinks("#D5392E");
-            changeColor0fReadMoreButtons("#D5392E");
+            //changeColorOfActiveLinks("#D5392E");
+            //changeColor0fReadMoreButtons("#D5392E");
             state = "srdce";
         } else if ((item.classList.contains("active")) && (item.children[0].alt == "motor")) {
             if ((document.querySelector(".given-video").src.includes("/video/srdce.mp4")) || (document.querySelector(".promo-video").src.includes("/video/srdce.mp4"))){
@@ -260,8 +266,8 @@ function changeVideo() {
             windowWidht = window.innerWidth;
             scaleVideo(state);
             //cursorColor(state);
-            changeColorOfActiveLinks("#64a19d");
-            changeColor0fReadMoreButtons("#64a19d");
+            //changeColorOfActiveLinks("#64a19d");
+            //changeColor0fReadMoreButtons("#64a19d");
             state = "motor";
         }
     })
@@ -320,7 +326,7 @@ window.onload = () => {
     getCoverImageSize();
     makeReadMoreTouchable();
     scaleVideo(state);
-    changePictures(boldPic, twinPicArrTlusty);
-    changePictures(lightPic, twinPicArrTenky);
+    //changePictures(boldPic, twinPicArrTlusty);
+    //changePictures(lightPic, twinPicArrTenky);
     changeSlideMenu();
 }

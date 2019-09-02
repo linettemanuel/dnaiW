@@ -515,30 +515,6 @@ footer {
     font-size: 14px;
 }
 
-.vision:hover img {
-    display: none;
-    opacity: 0;
-    margin-top: 26vw;
-    margin-left: 10%;
-}
-
-.vision:hover  {
-    cursor:  pointer;
-}
-
-.vision-two:hover .inner-text  {
-    position: absolute;
-    display: block;
-    top: 20%;
-}
-
-.vision:hover .img-two {
-    display: none;
-    opacity: 0;
-    margin-left: 2%;
-    margin-top: 10vw;
-}
-
 .vision img {
     display: block;
     width: 56%;
@@ -553,37 +529,9 @@ footer {
     margin-top: 6%;
 }
 
-.vision:hover h2 {
-    width: 80%;
-    text-align: left;
-    margin-top: 0;
-    margin-left: 10%;
-    font-size: 20px;
-    display: block;
-    position: relative;
-    top: -20px;
-}
-
 .vision .show-up {
     display: none;
     opacity: 0;
-}
-
-.vision:hover .show-up {
-    display: block;
-    position: relative;
-    opacity: 1;
-    padding-bottom: 2rem;
-}
-
-.vision:hover .show-up p {
-    font-family: "GT America Extended";
-    font-weight: 300;
-    text-align: left;
-    margin-bottom: 0;
-    font-size: 19px;
-    width: 80%;
-    margin: auto;
 }
 
 .technology {
@@ -597,26 +545,6 @@ footer {
 }
 
 /* vision two hover */
-
-.vision-two:hover img {
-    display: none;
-    opacity: 0;
-    margin-left: 18%;
-    margin-top: 19vw;
-}
-
-.vision-two:hover  {
-    cursor: pointer;
-}
-
-.vision-two:hover .img-two {
-    display: none;
-    opacity: 0;
-    margin-top: 26vw;
-    margin-top: 31%;
-    margin-left: 10%;
-}
-
 .vision-two img {
     display: block;
     width: 37%;
@@ -635,46 +563,12 @@ footer {
     text-align: center;
 }
 
-.vision-two:hover h2 {
-    width: 80%;
-    text-align: left;
-    margin-left: 10%;
-    margin-top: 0;
-    font-size: 20px;
-    display: block;
-    position: relative;
-    top: -20px;
-}
-
 .vision-two .show-up {
     display: none;
     opacity: 0;
 }
 
-.vision-two:hover .show-up {
-    display: block;
-    position: relative;
-    opacity: 1;
-    padding-bottom: 2rem;
-}
 
-.vision-two:hover .show-up p {
-    font-family: "GT America Extended";
-    font-weight: 300;
-    text-align: left;
-    margin-bottom: 0;
-    font-size: 19px;
-    width: 80%;
-    margin: auto;
-}
-
-.vision:hover .inner-text {
-    margin-top: 3.2rem;
-}
-
-.vision-two:hover .inner-text {
-    margin-top: 3.2rem;
-}
 
 .inner-text {
     position: relative;
@@ -1138,57 +1032,9 @@ svg {
     .mt-lg-16 {
         margin-top: 8rem;
     }
-    .vision:hover img {
-        width: 15%;
-        display: block;
-        position: absolute;
-        top: -10%;
-        left: 8%;
-        opacity: 1;
-    }
-    .vision:hover .img-two {
-        width: 10%;
-        display: block;
-        position: absolute;
-        top: 0;
-        opacity: 1;
-    }
     
     /* vision two hover */
     
-    .vision-two:hover img {
-        width: 10%;
-        display: block;
-        position: absolute;
-        top: 0;
-        opacity: 1;
-    }
-    
-    .vision-two:hover .img-two {
-        width: 7.5%;
-        display: block;
-        position: absolute;
-        top: 0;
-        opacity: 1;
-    }
-
-    .vision:hover .inner-text {
-        margin-top: 0;
-        position: relative;
-        display: block;
-        top: 25%;
-    }
-
-    .vision-two:hover .inner-text {
-        margin-top: 0;
-        position: relative;
-        display: block;
-        top: 25%;
-    }
-    
-    .vision-two:hover .inner-text {
-        margin-top: 0;
-    }
 }
 
 .projects-section .project-text {
@@ -1433,32 +1279,6 @@ svg {
         line-height: 1.5vw;
     }
 
-    .vision:hover .show-up p {
-        font-size: 1vw;
-        line-height: 1.5vw;
-    }
-
-    .vision-two:hover .show-up p {
-        font-size: 1vw;
-        line-height: 1.5vw;
-    }
-
-    .vision:hover h2 {
-        font-size: 1.3vw;
-    }
-
-    .vision-two:hover h2 {
-        font-size: 1.3vw;
-    }
-
-    .vision-two:hover .img-two {
-        bottom: -27vh;
-    }
-
-    .vision-two:hover img {
-        bottom: -20vh;
-    }
-
 
     .signup-section p {
         font-size: 0.8vw;
@@ -1502,7 +1322,8 @@ svg {
 }
 
 .read-more-btn {
-    color: #64a19d;
+    color: rgba(255, 255, 255, 0.55);
+    text-decoration: underline;
 }
 
 .read-more-btn:hover {
