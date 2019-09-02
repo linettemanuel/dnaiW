@@ -1748,3 +1748,19 @@ h4 {
   color: rgba(255, 255, 255, 0.55);
   text-decoration: underline;
 }
+
+.carouse-control-scroll {
+  z-index: 100;
+}
+
+.carouse-control-scroll a {
+  width: 5vw;
+  height: auto;
+  display: inline-block;
+  margin: 0px;
+  padding: 0px;
+}
+
+.carouse-control-scroll a img {
+  margin: 0px;
+}

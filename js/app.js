@@ -26,6 +26,14 @@ let menuOpened = false;
 let scewedMenu = document.querySelector(".scewedMenu");
 let mainContent = document.querySelector(".main-content");
 
+$(carousel).on('slide.bs.carousel',function(){
+    $('.masthead-title').fadeOut(300);
+});
+
+$(carousel).on('slid.bs.carousel',function(){
+    $('.masthead-title').fadeIn(600);
+});
+
 hamburgerIcon.onclick = (e) => {
     if(menuOpened) {
         e.target.src ="./" + `${iconPath[0]}`;
