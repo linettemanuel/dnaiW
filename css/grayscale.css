@@ -1488,6 +1488,10 @@ h4 {
   background: transparent;
 }
 
+.masthead h1 {
+  line-height: 1.2;
+}
+
 .vision-section {
   background: #0a0a0b;
   background-image: url(../img/348.jpg);
@@ -1514,6 +1518,11 @@ h4 {
 
 .scroll-button {
   bottom: -12vh;
+  left: 0;
+}
+
+.scroll-button img {
+  margin-left: 0;
 }
 
 .vision-section img {
@@ -1701,13 +1710,14 @@ h4 {
   display: block;
   position: relative;
   top: 20vw;
-  left: 48%;
+  left: 50%;
   width: 28%;
 }
 
 .static-section .scroll-button {
   bottom: -25vw;
   z-index: 1001;
+  left: -1vh;
 }
 
 .static-section .btn:focus {
@@ -1730,6 +1740,35 @@ h4 {
 
 .static-section .btn a:active {
   outline: none;
+}
+
+#carousel-products-solutions .carousel-control-prev {
+  left: -10vw;
+}
+
+#carousel-products-solutions .carousel-control-next {
+  right: -10vw;
+}
+
+#carousel-products-solutions .featured-text {
+  max-height: 60vh;
+  overflow-y: scroll;
+}
+
+#ai-guided-product-design .featured-text {
+  width: 80%;
+  margin: auto;
+  margin-bottom: 2rem;
+}
+
+#ai-guided-product-design img {
+  width: 80%;
+  margin: auto;
+  margin-bottom: 2rem;
+}
+
+.carousel-caption {
+  top: 31vw;
 }
 
 @media (min-width: 992px) {
@@ -1789,9 +1828,32 @@ h4 {
   #mainNav .navbar-brand img {
     left: 4%;
   }
+  .carousel-caption {
+    top: 32vw;
+  }
 }
 
 .read-more-btn {
   color: rgba(255, 255, 255, 0.55);
   text-decoration: underline;
+}
+
+@media (max-width: 776px) {
+  .static-section h2 {
+    position: absolute;
+    top: 37vw;
+    left: 11%;
+    width: 73%;
+  }
+  .cover-img {
+    width: 165vw;
+    -webkit-transform: translate(-20%, -6%);
+    transform: translate(-20%, -6%);
+  }
+}
+
+@media (max-width: 500px) {
+  .static-section h2 {
+    top: 50vw;
+  }
 }

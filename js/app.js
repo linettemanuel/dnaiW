@@ -26,14 +26,6 @@ let menuOpened = false;
 let scewedMenu = document.querySelector(".scewedMenu");
 let mainContent = document.querySelector(".main-content");
 
-$(carousel).on('slide.bs.carousel',function(){
-    $('.masthead-title').fadeOut(300);
-});
-
-$(carousel).on('slid.bs.carousel',function(){
-    $('.masthead-title').fadeIn(600);
-});
-
 hamburgerIcon.onclick = (e) => {
     if(menuOpened) {
         e.target.src ="./" + `${iconPath[0]}`;
@@ -84,7 +76,7 @@ mainContent.onmouseover= (e) => {
 }
 
 
-getCoverImageSize();
+//getCoverImageSize();
 
 function getCoverImageSize() {
     carouselItems.forEach( item  => {
@@ -121,7 +113,7 @@ function carouselAutoOnOrOff() {
 
 window.onscroll = () => {
     scaleVideo(state);
-    getCoverImageSize();
+    //getCoverImageSize();
     carouselAutoOnOrOff();
     changeVideo();
     current = document.querySelector(".active");
@@ -327,11 +319,11 @@ function changeSlideMenu() {
 
 window.onresize = () =>{
     scaleVideo(state);
-    getCoverImageSize();
+    //getCoverImageSize();
 }
 
 window.onload = () => {
-    getCoverImageSize();
+    //getCoverImageSize();
     makeReadMoreTouchable();
     scaleVideo(state);
     //changePictures(boldPic, twinPicArrTlusty);
