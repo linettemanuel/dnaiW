@@ -1688,6 +1688,50 @@ h4 {
   margin-top: 4%;
 }
 
+.static-section {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+.static-section h2 {
+  opacity: 1;
+  display: block;
+  position: relative;
+  top: 40%;
+  left: 48%;
+  width: 28%;
+}
+
+.static-section .scroll-button {
+  bottom: -50vh;
+  z-index: 1001;
+}
+
+.static-section .btn:focus {
+  outline: none;
+  border: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.static-section .btn a:focus {
+  outline: none;
+}
+
+.static-section .btn:active {
+  outline: none;
+  border: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.static-section .btn a:active {
+  outline: none;
+}
+
 @media (min-width: 992px) {
   .vision img {
     width: 15%;
@@ -1750,20 +1794,4 @@ h4 {
 .read-more-btn {
   color: rgba(255, 255, 255, 0.55);
   text-decoration: underline;
-}
-
-.carouse-control-scroll {
-  z-index: 100;
-}
-
-.carouse-control-scroll a {
-  width: 5vw;
-  height: auto;
-  display: inline-block;
-  margin: 0px;
-  padding: 0px;
-}
-
-.carouse-control-scroll a img {
-  margin: 0px;
 }
