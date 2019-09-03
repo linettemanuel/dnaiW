@@ -25,6 +25,7 @@ let iconPath = ["img/hamburger.svg", "img/close.svg"];
 let menuOpened = false;
 let scewedMenu = document.querySelector(".scewedMenu");
 let mainContent = document.querySelector(".main-content");
+let shrinkBar = document.querySelector(".shrink");
 
 hamburgerIcon.onclick = (e) => {
     if(menuOpened) {
@@ -44,8 +45,8 @@ hamburgerIcon.onclick = (e) => {
         navMenu.style.transform = "translateX(0%)";
         scewedMenu.style.transition = "transform 1s ease-in-out";
         navMenu.style.transition = "transform 1.25s ease-in-out";
-        scewedMenu.style.zIndex = 1001;
-        navMenu.style.zIndex = 1002;
+        scewedMenu.style.zIndex = 10001;
+        navMenu.style.zIndex = 10002;
         menuOpened = true;
     }
 } 
@@ -58,8 +59,8 @@ hamburgerIcon.onmouseover = (e) => {
     navMenu.style.transform = "translateX(0%)";
     scewedMenu.style.transition = "transform 1s ease-in-out";
     navMenu.style.transition = "transform 1.25s ease-in-out";
-    scewedMenu.style.zIndex = 1001;
-    navMenu.style.zIndex = 1002;
+    scewedMenu.style.zIndex = 10001;
+    navMenu.style.zIndex = 10002;
 
 }
 
@@ -110,12 +111,23 @@ function carouselAutoOnOrOff() {
 
 }
 
+function showBlackBarBehindMenu() {
+
+    if (carousel.getBoundingClientRect().top > -50) {
+        shrinkBar.style.transition = "0.3s ease";
+        shrinkBar.style.opacity = 0;
+    } else {
+        shrinkBar.style.transition = "0.3s ease";
+        shrinkBar.style.opacity = 1;
+    }
+}
 
 window.onscroll = () => {
     scaleVideo(state);
     //getCoverImageSize();
+    showBlackBarBehindMenu();
     carouselAutoOnOrOff();
-    changeVideo();
+    //changeVideo();
     current = document.querySelector(".active");
     /*
     if(current) {
@@ -191,7 +203,7 @@ let controls = document.querySelectorAll(".car-con");
 
 controls.forEach( control => {
     control.onclick = () => {
-        changeVideo();
+        //changeVideo();
     }
 })
 
@@ -311,7 +323,7 @@ function changeSlideMenu() {
                 changeSlideMenu()
             } else {
                 marginXSlider -= 435;
-                twinSlider.style.marginLeft = marginXSlider + "px";
+                //twinSlider.style.marginLeft = marginXSlider + "px";
             }
         }, 6000 * i)
     }
@@ -324,6 +336,7 @@ window.onresize = () =>{
 
 window.onload = () => {
     //getCoverImageSize();
+    showBlackBarBehindMenu()
     makeReadMoreTouchable();
     scaleVideo(state);
     //changePictures(boldPic, twinPicArrTlusty);
