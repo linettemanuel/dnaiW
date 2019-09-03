@@ -1795,8 +1795,6 @@ h4 {
   background-color: #000000;
   opacity: 0;
   z-index: 10000;
-  -webkit-box-shadow: 1px 1px 19px rgba(100, 100, 100, 0.35);
-  box-shadow: 1px 1px 19px rgba(100, 100, 100, 0.35);
 }
 
 @media (min-width: 992px) {
