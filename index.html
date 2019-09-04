@@ -210,11 +210,13 @@
               <div class="carousel-item active">
                 <div id="implementation-of-digital-twins" class="row no-gutters mb-4 mb-lg-5">
 
-                  <div class="col-xl-6 col-lg-6 col-md-6 col-xs-12">
+                  <div class="col-xl-5 col-lg-5 col-md-5 col-xs-12">
                     <div class="featured-text text-left mx-auto" style="width: 80%;">
-                      <h4 class="text-white mx-auto text-bold border-top-5 mb-6" >Implementation of Digital Twin</h4>
-                      <p class="text-white mb-2 mx-auto">
+                      <h4 class="text-white mx-auto text-bold border-top-5 mb-2" >Digital Twin Implementation</h4>
+                      <p class="text-white mb-2 mx-auto" align="justify">
                         Digital Twin is a software component that mimics behavior of an arbitrary physical system.
+                      </p>
+                        <p class="text-white mb-2 mx-auto" align="justify">
                         We build digital twins of:
                       </p>
                       <ul class="text-white">
@@ -226,11 +228,11 @@
                       </ul>
                       <p class="text-white mb-2 mx-auto">
                       Unlike physical systems that are closed, have hidden states, give partial, noisy and delayed
-                        information, the digital twin:
+                        information, the twin:
                       </p>
                       <ul class="text-white">
                         <li>is open and 100% transparent</li>
-                        <li>provides all actual and historical data through API in unified data model</li>
+                        <li>provides all actual and historical data through API in unified model</li>
                         <li>suppresses measurement noise, model errors</li>
                         <li>estimates hidden state information from historical states and actual observations of the original physical system</li>
                         <li>data is available even during infrastructure outages and before the real data has arrived (prediction)</li>
@@ -240,16 +242,18 @@
                     </div>
                   </div>
 
-                  <div class="col-xl-6 col-lg-6 col-md-6 col-xs-12">
+                  <div class="col-xl-7 col-lg-7 col-md-7 col-xs-12">
                     <img class="cover-img d-block" src="./img/digital-twin-schema.png" alt="schema">
+                   <!--
                     <p class="text-white mb-2 mx-auto">
                         <b>360º</b> - we put the physical system into its full context – that includes its historical, present, and future states,
-                      as well as of information about all interacting systems to achieve plausability and accuracy of the twin outputs.
+                      as well as of information about all interacting systems.
                       </p>
                       <p class="text-white mb-2 mx-auto">
-                        It is not realistic to have 100% information available for the digital twin at the beginning.
-                      Therefore we integrate new information in iterations, where the digital twin becomes more precise and accurate after
-                      each iteration.
+                        It is not realistic to have 100% information available at the beginning.
+                        We integrate information in iterations, where the digital twin becomes more precise and accurate after
+                        each iteration.
+                        -->
                   </div>
 
                 </div>
@@ -267,25 +271,26 @@
 
                   <div class="col-lg-4 col-md-4 col-xs-12">
                     <div class="featured-text text-left">
-                      <h4 class="text-white mx-auto text-bold border-top-5 mb-6" >Digital Twin for Manufacturing</h4>
-                      <p class="text-white mb-2 mx-auto">
-                        Common obstacles when building digital twins in manufacturing:
-                      </p>
-                      <ul class="text-white">
-                        <li>machine heterogeneity - different manufacturers, ages and levels of wear</li>
-                        <li>hidden machine states - some real states is not physically possible to measure</li>
-                        <li>unstructured, disconected data in different format - data has different data models, is not correlated, is stored in data silos</li>
-                        <li>limited amount of training samples  - machine defects, product quality flaws from which the system can learn are rare</li>
-                      </ul>
+                      <h4 class="text-white mx-auto text-bold border-top-5 mb-2" >Digital Twin for Manufacturing</h4>
+                      <br><br><br><br>
                       <p class="text-white mb-2 mx-auto">
                         Digital twin in manufacturing provides these outcomes:
                       </p>
                       <ul class="text-white">
-                        <li>predicts future development - e.g. probability distribution of machine defect for predictive maintenance</li>
-                        <li>anomalies and exceptional behavior</li>
-                        <li>fires alerts and watch for important events - e.g.hitting tolerance limits</li>
-                        <li>root cause analysis - e.g. what impacts quality or caused machine defect</li>
-                        <li>online dashboards and reports for managers, operators and quality engineers</li>
+                        <li>predicts future development - probability distribution of machine defect (e.g. predictive maintenance)</li>
+                        <li>detects anomalies  - detection of exceptional behavior</li>
+                        <li>fires alerts and watch for important events - hitting tolerance limits</li>
+                        <li>root cause analysis - what impacts quality or caused machine defect</li>
+                        <li>online dashboards and reports for managers, operators and QA</li>
+                      </ul>
+                      <p class="text-white mb-2 mx-auto">
+                        Common implementation obstacles in manufacturing:
+                      </p>
+                      <ul class="text-white">
+                        <li>machine heterogeneity - different vendor, age and level of wear</li>
+                        <li>hidden states - some states are not physically possible to measure</li>
+                        <li>unstructured, disconnected data in different format - data has different data models, is not correlated, is stored in data silos</li>
+                        <li>limited amount of training samples  - machine defects, product quality flaws from which the system can learn are rare</li>
                       </ul>
                     </div>
                   </div>
@@ -302,7 +307,8 @@
                   </div>
                   <div class="col-lg-4 col-md-4 col-xs-12">
                     <div class="featured-text text-left">
-                      <h4 class="text-white mx-auto text-bold border-top-5 mb-6" >Digital Twin for Health Care</h4>
+                      <h4 class="text-white mx-auto text-bold border-top-5 mb-2" >Digital Twin for Health Care</h4>
+                      <br><br><br><br>
                       <p class="text-white mb-1 mx-auto">
                         The  latest research says that 80% of the diseases can be prevented.
                         Imagine that you are going to a doctor who will make you a unique "digital twin" - your unique digital image
@@ -342,8 +348,8 @@
                   <div class="featured-text text-left">
                     <h4 class="text-white mx-auto text-bold border-top-5 mb-3" >AI Guided Product Design and Optimization</h4>
                     <p class="text-white mb-2 mx-auto">The conventional approach for product design and tuning is that the engineers model products in CAD tools.
-                      In order to evaluate quality of their design, they need to build physical prototype or simulate behavior using CFD, which is very costly and time consuming.
-                      Machine learning can reduce costs and time in this process, if the target behavior is predicted by a trained AI model.
+                      To evaluate quality of the design, they build physical prototypes or simulate behavior using CFD => is very costly and time consuming.
+                      Machine learning can reduce costs and time when the target behavior is predicted by a trained AI model.
                     </p>
                     <p class="text-white mb-2 mx-auto">Our AI driven approach to product design helps to: </p>
                     <ul class="text-white">
@@ -505,7 +511,7 @@
             <div class="inner-text">
               <h2 class="text-white align-items-center text-capitalize text-bold middle-text">our values</h2>
               <div class="show-up">
-                <p class="text-white">We simply go to projects that we feel good about. We follow our inner voice leading us towards "right way".</p>
+                <p class="text-white">We simply prefer go towards projects that we feel good about. We follow our inner voice leading us towards the "right way".</p>
               </div>
             </div>
           </div>
@@ -527,7 +533,7 @@
               <img class="img-two pt-6" src="./img/new.svg" alt="eye icons">
               <h2 class="text-white align-items-center text-capitalize text-bold middle-text">latest research</h2>
               <div class="show-up">
-                <p class="text-white">We track the latest technologies, explore them, and have a very good idea of ​​their possible benefits.</span></p>
+                <p class="text-white">We track the latest technologies, explore them, and know ​​their possible benefits.</span></p>
               </div>
             </div>
           </div>
@@ -542,7 +548,8 @@
           <div class="col-xl-3 col-lg-4 text-marg-right mb-5">
               <div class="featured-text text-left">
                 <h4 class="text-black mx-auto text-bold border-top-black-5 mb-6" >Team</h4>
-                <p class="text-black mb-2 mx-auto">Our core team is made up of top architects, AI developers, mathematicians, statisticians and subject matter experts. People with an open mind who are not afraid of innovation, risking and learning from other colleagues, and of their own mistakes.</span></p>
+                <p class="text-black mb-2 mx-auto">Our core team is made up of top architects, AI developers, mathematicians, statisticians and subject matter experts.
+                  People with an open mind who are not afraid of innovation, risking and learning from other colleagues, and of their own mistakes.</span></p>
               </div>
             </div>
             <div class="col-xl-8 col-lg-7" style="margin-top: -5px;">
