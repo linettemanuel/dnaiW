@@ -51,7 +51,7 @@
 </head>
 
 <body id="page-top">
-  <svg class="scewedMenu" width="28vw" height="100vh" viewBox="0 0 100 100" preserveAspectRatio="none">
+  <svg class="scewedMenu" viewBox="0 0 100 100" preserveAspectRatio="none">
     <polygon points="0 100, 100 100, 100 0, 0 0"
     style="fill:rgba(12, 12, 12, 0.85);fill-rule:evenodd; " />
   Sorry, your browser does not support inline SVG.
@@ -71,9 +71,12 @@
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#products-solutions">Products & Solutions</a>
           </li>
+          <!--
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#about">About Company</a>
           </li>
+
+          -->
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#team">Team</a>
           </li>
@@ -113,18 +116,18 @@
                     </div>
                   </div>
                 </div>
-                <!--
+              
                 <div class="container">
                   <div class="row">
-                    <div class="text-left col-6">
+                    <div class="text-left col-md-6 col-sm-12 col-xs-12 hide-till-md">
                       <p>Products & Solutions</p>
                     </div>
-                    <div class="text-left col-6">
+                    <div class="text-left col-md-6 col-sm-12 col-xs-12 hide-till-md">
                       <p>Who are we</p>
                     </div>
                   </div>
                 </div>
-                -->
+
                 <div class="container">
                   <div class="mx-auto">
                   </div>
@@ -148,18 +151,18 @@
                       </div>
                   </div>
                 </div>
-                <!--
+     
                 <div class="container">
                   <div class="row">
-                    <div class="text-left col-6">
+                    <div class="text-left col-md-6 col-sm-12 col-xs-12 hide-till-md">
                       <p>Products & Solutions</p>
                     </div>
-                    <div class="text-left col-6">
+                    <div class="text-left col-md-6 col-sm-12 col-xs-12 hide-till-md">
                       <p>Who are we</p>
                     </div>
                   </div>
                 </div>
-                -->
+  
                 <div class="container">
                   <div class="mx-auto">
                   </div>
@@ -201,7 +204,7 @@
     -->
 
     <!-- PRODUCTS & SOLUTIONS SECTION -->
-    <section id="products-solutions" class="about-section text-center" style="min-height: 100vh;">
+    <section id="products-solutions" class="about-section text-center" style="min-height: 100vh; display:block;">
       <div class="container" style="max-width: 80vw;">
         <header class="masthead">
           <div id="carousel-products-solutions" class="carousel slide" data-ride="carousel" data-interval="10000" style="max-height: 100vh;">
@@ -210,19 +213,13 @@
               <div class="carousel-item active">
                 <div id="implementation-of-digital-twins" class="row no-gutters mb-4 mb-lg-5">
 
-                  <div class="col-xl-5 col-lg-5 col-md-5 col-xs-12">
+                  <div class="col-md-6 col-sm-12 col-xs-12">
                     <div class="featured-text text-left mx-auto" style="width: 80%;">
-                      <h4 class="text-white mx-auto text-bold border-top-5 mb-2" >Digital Twin Principles</h4>
-                      <br>
-                      <br>
-                      <br>
-                      <br>
-                      <br>
-                      <p class="text-white mb-2 mx-auto" align="justify">
+                      <h4 class="text-white mx-auto text-bold border-top-5 mb-6" >Digital Twin Principles</h4>
+                      <p class="text-white mb-3 mx-auto" align="justify">
                         Digital Twin is a software component that mimics behavior of an arbitrary physical system.
                       </p>
-                      <br>
-                      <p class="text-white mb-2 mx-auto">
+                      <p class="text-white mb-4 mx-auto">
                       Unlike physical systems that are closed, have hidden states, give partial, noisy and delayed
                         information, the twin:
                       </p>
@@ -238,8 +235,8 @@
                     </div>
                   </div>
 
-                  <div class="col-xl-7 col-lg-7 col-md-7 col-xs-12">
-                    <img class="cover-img d-block" src="./img/digital-twin-schema.png" alt="schema">
+                  <div class="col-md-6 col-sm-12 col-xs-12">
+                    <img class="cover-img schema" src="./img/graf2.svg" alt="schema">
                   </div>
                 </div>
               </div>
@@ -247,21 +244,27 @@
               <div class="carousel-item">
                 <div id="implementation-of-digital-twins2" class="row no-gutters mb-4 mb-lg-4">
                   <div class="featured-text text-left">
-                    <h4 class="text-white mx-auto text-bold border-top-5 mb-3" >Digital Twin Implementation</h4>
-                    <br><br><br>
-
-                    <p class="text-white mb-2 mx-auto">
-                        <b>360º</b> - we put the physical system into its full context – that includes its historical, present, and future states,
-                      as well as of information about all interacting systems.
-                      </p>
-                      <p class="text-white mb-2 mx-auto">
-                        It is not realistic to have 100% information available at the beginning.
-                        We integrate information in iterations, where the digital twin becomes more precise and accurate after
-                        each iteration.
-                      </p>
-                  </div>
-                  <div>
-                    <img class="cover-img d-block" src="./img/digital-twin-360.png" alt="schema">
+                    <div class="row mb-6">
+                      <div class="col-md-6 col-sm-12 col-xs-12">
+                          <h4 class="text-white mx-auto text-bold border-top-5 mb-3" >Digital Twin Implementation</h4>
+                      </div>
+                      <div class="col-md-6 col-sm-12 col-xs-12">
+                          <p class="text-white mb-2 mx-auto">
+                            <b>360º</b> - we put the physical system into its full context – that includes its historical, present, and future states,
+                            as well as of information about all interacting systems.
+                          </p>
+                          <p class="text-white mb-2 mx-auto">
+                            It is not realistic to have 100% information available at the beginning.
+                            We integrate information in iterations, where the digital twin becomes more precise and accurate after
+                            each iteration.
+                          </p>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-12">
+                        <img class="cover-img  schema" src="./img/graf3.svg" alt="schema">
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -269,15 +272,15 @@
               <div class="carousel-item">
                 <div id="digital-twin-for-manufacturing" class="row no-gutters mb-4 mb-lg-5">
 
-                  <div class="col-lg-8 col-md-8 col-xs-12">
+                  <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
                     <video class="promo-video" style="width:45vw; height:auto;" loop no-controls muted autoplay defaultmuted playsinline>
                       <source class="given-video" src="./video/motor.mp4" type="video/mp4"/>
                       Your browser does not support the video tag.
                     </video>
                   </div>
 
-                  <div class="col-lg-4 col-md-4 col-xs-12">
-                    <div class="featured-text text-left">
+                  <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                    <div class="featured-text text-left" style="max-height: 595px; overflow-y: scroll;">
                       <h4 class="text-white mx-auto text-bold border-top-5 mb-2" >Digital Twin for Manufacturing</h4>
                       <br><br><br><br>
                       <p class="text-white mb-2 mx-auto">
@@ -297,7 +300,7 @@
                         <li>machine heterogeneity - different vendor, age and level of wear</li>
                         <li>hidden states - some states are not physically possible to measure</li>
                         <li>unstructured, disconnected data in different format - data has different data models, is not correlated, is stored in data silos</li>
-                        <li>limited amount of training samples  - machine defects, product quality flaws from which the system can learn are rare</li>
+                        <!-- <li>limited amount of training samples  - machine defects, product quality flaws from which the system can learn are rare</li> -->
                       </ul>
                     </div>
                   </div>
@@ -306,21 +309,25 @@
               </div>
               <div class="carousel-item">
                 <div id="digital-twin-for-health-care" class="row no-gutters mb-4 mb-lg-5">
-                  <div class="col-lg-8 col-md-8 col-xs-12">
-                    <video class="promo-video" style="width:45vw; height:75vh;" loop no-controls muted autoplay defaultmuted playsinline>
+                  <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                    <video class="promo-video" style="width:45vw; " loop no-controls muted autoplay defaultmuted playsinline>
                       <source class="given-video" src="./video/srdce.mp4" type="video/mp4"/>
                       Your browser does not support the video tag.
                     </video>
                   </div>
-                  <div class="col-lg-4 col-md-4 col-xs-12">
+                  <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
                     <div class="featured-text text-left">
                       <h4 class="text-white mx-auto text-bold border-top-5 mb-2" >Digital Twin for Health Care</h4>
                       <br><br><br><br>
-                      <p class="text-white mb-1 mx-auto">
+                      <p class="text-white mb-3 mx-auto">
                         The  latest research says that 80% of the diseases can be prevented.
                         Imagine that you are going to a doctor who will make you a unique "digital twin" - your unique digital image
                         that will based on your health history, special tests and ongoing measurements and will give an objective assessment of
-                        your health. More over, the digital twin will be able to track, detect anomalies, predict trends in your health
+                        your health.
+                      </p>
+
+                      <p class="text-white mb-3 mx-auto">
+                        More over, the digital twin will be able to track, detect anomalies, predict trends in your health
                         and let you or the doctor to act in advance. Imagine that the system is constantly learning from the latest research
                         and experience that has helped people with a similar diagnosis anywhere in the world.
                       </p>
@@ -330,50 +337,56 @@
               </div>
               <div class="carousel-item">
                 <div id="digital-twin-for-houses" class="row no-gutters mb-8 mb-lg-8">
-                  <div class="col-xl-8 col-lg-8 col-md-8 col-xs-12">
-                    <video class="promo-video" style="width:56.7vw; height:75vh;" loop no-controls muted autoplay defaultmuted playsinline>
+                  <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                    <video class="promo-video" style="width:56.7vw;" loop no-controls muted autoplay defaultmuted playsinline>
                       <source class="given-video" src="./video/mesto.mp4" type="video/mp4"/>
                       Your browser does not support the video tag.
                     </video>
                   </div>
-                  <div class="col-xl-4 col-lg-4 col-md-4 col-xs-12">
+                  <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12">
                     <div class="featured-text text-left">
                       <h4 class="text-white mx-auto text-bold border-top-5 mb-6" >Digital Twin for Living</h4>
-                      <p class="text-white mb-1 mx-auto">
+                      <p class="text-white mb-3 mx-auto">
                         Every building - <b>house, office</b> or whole <b>city part</b> - is a physical
                         system with complex internal dynamics and many evolving variables. Typically, only a small subset
                         of this information is visible and the building is de facto a black box.
                         If enough variables with sufficient sampling frequency gets available, you can create digital model that behaves
-                        similarly to your building. If yopu then then connect the model with the building you get the physical system and its digital twin synchronized.
+                        similarly to your building. If you then connect the model with the building you get the physical system and its digital twin synchronized.
+                      </p>
+                      <p class="text-white mb-3 mx-auto">
                         Now imagine that you connect data from all other interacting systems
                         such as people, outside whether, forest nearby... You can go further and start wisely influencing
                         the complete ecosystem through actuators and strategic planning to achieve environment that is green, healthy, energetically and financially sustainable .
                       </p>
-                    </div>
+                  </div>
                   </div>
                 </div>
               </div>
               <div class="carousel-item">
                 <div id="ai-guided-product-design" class="row no-gutters mb-4 mb-lg-4">
                   <div class="featured-text text-left">
-                    <h4 class="text-white mx-auto text-bold border-top-5 mb-3" >AI Guided Product Design and Optimization</h4>
-                    <br><br><br>
-                    <p class="text-white mb-2 mx-auto">Industrial design and optimisation process starts in CAD tooling.
-                     Created CAD model of the product is used to build a physical prototype or simulate behavior using CFD. Both is very costly and time consuming.
-                      The CAD => physical prototype or CFD loop is repeated until desired performance is achieved.
-
-
-                      Machine learning can reduce costs and time when the target behavior is predicted by a trained AI model.
-                    </p>
-                    <p class="text-white mb-2 mx-auto">Our AI driven approach uses geometrical parameters from CAD to predict behavior of the product and thus: </p>
-                    <ul class="text-white">
-                      <li>Avoid costly and time consuming physical prototyping and CFD models calculations</li>
-                      <li>Uncover new dependencies and rules that can be applied by engineers</li>
-                      <li>Make recommendations on how to modify product/machine parameters to achieve better results</li>
-                    </ul>
-                  </div>
-                  <div>
-                    <img class="cover-img d-block" src="./img/cad-ai-design.png" alt="scßhema">
+                    <div class="row">
+                      <div class="col-md-5 col-sm-12 col-xs-12">
+                          <h4 class="text-white mx-auto text-bold border-top-5 mb-3" >AI Guided Product Design and Optimization</h4>
+                          <br><br><br>
+                          <p class="text-white mb-3 mx-auto">Industrial design and optimisation process starts in CAD tooling.
+                           Created CAD model of the product is used to build a physical prototype or simulate behavior using CFD. Both is very costly and time consuming.
+                            The CAD => physical prototype or CFD loop is repeated until desired performance is achieved.
+      
+      
+                            Machine learning can reduce costs and time when the target behavior is predicted by a trained AI model.
+                          </p>
+                          <p class="text-white mb-2 mx-auto">Our AI driven approach uses geometrical parameters from CAD to predict behavior of the product and thus: </p>
+                          <ul class="text-white">
+                            <li>Avoid costly and time consuming physical prototyping and CFD models calculations</li>
+                            <li>Uncover new dependencies and rules that can be applied by engineers</li>
+                            <li>Make recommendations on how to modify product/machine parameters to achieve better results</li>
+                          </ul>
+                      </div>
+                      <div class="col-md-7 col-sm-12 col-xs-12">
+                          <img class="cover-img schema" src="./img/graf1.svg" alt="scßhema">
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -523,11 +536,9 @@
             <img class=" pt-6" src="./img/diamond_small.svg" alt="eye icons">
             <div class="inner-text">
               <h2 class="text-white align-items-center text-capitalize text-bold middle-text">our values</h2>
-
-                <p class="text-white" >Artificial Intelligence shall serve people</p>
-                <p class="nav-item text-white">Artificial Intelligence shall be aligned with human values</p>
-                <p class="nav-item text-white">Artificial Intelligence shall make world a better place for <b>everybody</b></p>
-              </ul>
+              <div class="show-up">
+                  <p class="text-white">Artificial Intelligence shall serve people. Artificial Intelligence shall be aligned with human values. Artificial Intelligence shall make world a better place for <strong>everybody</strong>.</p>
+              </div>
             </div>
           </div>
         </div>
@@ -692,7 +703,7 @@
                                   Account:
                                 </div>
                                 <div class="bank-details-item-value">
-                                  <input class="copy" value="2801460719/2010" type="text" readonly="readonly">
+                                  <input class="copy" value="2401426693/2010" type="text" readonly="readonly">
                                 </div>
                                 <div class="tooltip">
                                   <i class="far fa-copy"></i>
@@ -706,7 +717,7 @@
                                   IBAN:
                                 </div>
                                 <div class="bank-details-item-value">
-                                  <input class="copy" value="CZ5720100000002801460719" type="text" readonly="readonly">
+                                  <input class="copy" value="CZ9020100000002401426693" type="text" readonly="readonly">
                                 </div>
                                 <div class="tooltip">
                                   <i class="far fa-copy"></i>
@@ -742,6 +753,20 @@
                                   <span class="tooltiptext-confirm" id="myTooltip">Copied!</span>
                                 </div>
                               </div>
+
+                              <div class="bank-details-item">
+                                  <div class="bank-details-item-name">
+                                    IČO:
+                                  </div>
+                                  <div class="bank-details-item-value">
+                                    <input class="copy" value="07029519" type="text" readonly="readonly">
+                                  </div>
+                                  <div class="tooltip">
+                                    <i class="far fa-copy"></i>
+                                    <span class="tooltiptext" id="myTooltip">Copy</span>
+                                    <span class="tooltiptext-confirm" id="myTooltip">Copied!</span>
+                                  </div>
+                                </div>
                         </div>
                       </div>
                     </div>

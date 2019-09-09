@@ -233,6 +233,8 @@ h4 {
     left: 73.5vw;
     height: 80vh;
     margin: auto;
+    top: unset;
+    text-align: right;
     width: 21vw;
     flex-direction: column;
     transform: translateX(200%);
@@ -293,24 +295,6 @@ h4 {
     right: -10vw;
 }
 
-
-#carousel-products-solutions .featured-text {
-    max-height: 60vh;
-    overflow-y: scroll;
-}
-
-#ai-guided-product-design .featured-text {
-    width: 80%;
-    margin: auto;
-    margin-bottom: 2rem;
-}
-
-#ai-guided-product-design img {
-    width: 80%;
-    margin: auto;
-    margin-bottom: 2rem;
-}
-
 .carousel-caption {
     top: 31vw;
 }
@@ -334,13 +318,29 @@ h4 {
 .shrink {
     display: block;
     position: fixed;
-    height: 12vh;
+    height: 100px;
     width: 100vw;
     background-color: #000000;
     opacity: 0;
     z-index: 10000;
 }
 
+#products-solutions {
+    padding: 16rem 0 12rem;
+}
+
+#implementation-of-digital-twins .col-md-6 img {
+    margin-top: 15%;
+}
+
+#implementation-of-digital-twins2 .col-md-12 img {
+    margin: auto;
+    width: 90%;
+}
+
+.hide-till-md {
+    opacity: 0;
+}
 
 @media (min-width:992px) {
     .vision img {
@@ -410,6 +410,13 @@ h4 {
     .carousel-caption {
         top: 32vw;
     }
+
+    .cover-img {
+        display: block;
+    }
+    .hide-till-md {
+        opacity: 1;
+    }
 }
 
 .read-more-btn {
@@ -422,6 +429,33 @@ h4 {
     
 }
 
+@media(min-width: 780px) and (max-width: 998px){
+    .masthead h1 {
+        margin-left: 2rem;
+    }
+    .static-section h2 {
+        opacity: 1;
+        display: block;
+        position: relative;
+        top: 20vw;
+        left: 60%;
+        width: 28%;
+    }
+
+}
+
+@media (min-width: 777px){
+    #ai-guided-product-design img {
+        height: 90%;
+        width: 100%;
+        margin: auto;
+    }
+    svg {
+        width: 28vw;
+        height: 100vh;
+    }
+}
+
 @media (max-width:776px) {
     .static-section h2 {
         position: absolute;
@@ -430,14 +464,48 @@ h4 {
         width: 73%;
     }
 
-    .cover-img {
+    #mastheadMain .cover-img {
         width: 165vw;
         transform: translate(-20%, -6%);
     }
-}
 
+    #carousel-products-solutions .schema {
+        display: none;        
+    }
+
+    #ai-guided-product-design .schema {
+        display: none;
+    }
+
+    #products-solutions {
+        padding: 8rem 0 14rem;
+    }
+
+    .static-section .scroll-button {
+        bottom: -59vw;
+        z-index: 1001;
+        left: -1vh;
+    }
+
+    svg {
+        width: 100vw;
+        height: 100vh;
+    }
+    .navbar-expand-lg .navbar-nav {
+        left: 35vw;
+        top: 5rem;
+        text-align: center;
+        width: unset;
+    }
+}
+.collapse:not(.show) {
+    display: block;
+}
 @media (max-width:500px) {
     .static-section h2 {
         top: 50vw;
+    }
+    #mainNav .navbar-brand .hamburger-icon {
+        left: 85vw;
     }
 }
