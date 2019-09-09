@@ -437,6 +437,30 @@ html {
     background: gray;
 }
 
+.team-item h5 {
+    width: 85%;
+    display: block;
+    position: relative;
+    margin: auto;
+    margin-left: 1rem;
+    font-size: 1rem;
+    top: -73%;
+}
+
+.team-item .special-item {
+    width: 85%;
+    display: block;
+    position: relative;
+    margin: auto;
+    margin-left: 1rem;
+    font-size: 1rem;
+    top: -22%;
+}
+.team-item .join-us{
+    margin-top: 10px;
+    transform: translateY(-10px);
+}
+
 @media (min-width:1440px) { 
     
 }
