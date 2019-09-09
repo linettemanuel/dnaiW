@@ -424,6 +424,18 @@ h4 {
     text-decoration: underline;
 }
 
+html {
+    overflow: scroll;
+    overflow-x: hidden;
+}
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent; 
+}
+
+::-webkit-scrollbar-thumb {
+    background: gray;
+}
 
 @media (min-width:1440px) { 
     
