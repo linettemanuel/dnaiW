@@ -54,7 +54,7 @@ h4 {
     min-height: 250px;
     display: block;
     height: 25vw;
-    min-height: 250px;   
+    min-height: 310px;   
 }
 
 .vision-two {
@@ -151,6 +151,7 @@ h4 {
     font-size: 19px;
     width: 80%;
     margin: auto;
+    margin-left: 1rem;
 }
 
 .vision-two img {
@@ -184,6 +185,7 @@ h4 {
     position: relative;
     opacity: 1;
     padding-bottom: 2rem;
+    margin-left:8%;
 }
 
 .vision-two .show-up p {
@@ -194,6 +196,7 @@ h4 {
     font-size: 19px;
     width: 80%;
     margin: auto;
+    margin-left: 1rem;
 }
 
 .vision .inner-text {
@@ -326,7 +329,7 @@ h4 {
 }
 
 #products-solutions {
-    padding: 16rem 0 12rem;
+    padding: 8rem 0 0rem;
 }
 
 #implementation-of-digital-twins .col-md-6 img {
@@ -342,12 +345,16 @@ h4 {
     opacity: 0;
 }
 
-@media (min-width:992px) {
+#implementation-of-digital-twins .cover-img {
+    transform: unset;
+}
+
+@media (min-width:1300px) {
     .vision img {
-        width: 13.5%;
+        width: 11%;
         display: block;
         position: absolute;
-        top: -8%;
+        top: -1%;
         left: 8%;
         opacity: 1;
     }
@@ -362,10 +369,10 @@ h4 {
     /* vision two hover */
     
     .vision-two img {
-        width: 10%;
+        width: 7%;
         display: block;
         position: absolute;
-        top: 0;
+        top: 9%;
         opacity: 1;
         margin-left: 18%;
         margin-top: 13vw;
@@ -396,6 +403,9 @@ h4 {
     .vision-two .inner-text {
         margin-top: 0;
 	}
+}
+
+@media (min-width:992px) {
 
 	#mainNav .nav-link {
 		padding: 1vh 0;
@@ -417,6 +427,10 @@ h4 {
     .hide-till-md {
         opacity: 1;
     }
+
+    #implementation-of-digital-twins2 .featured-text .row:first-child {
+        margin-bottom: 5%;
+    }
 }
 
 .read-more-btn {
@@ -429,37 +443,10 @@ html {
     overflow-x: hidden;
 }
 ::-webkit-scrollbar {
-    width: 0px;
-    background: transparent; 
+    width: 0px;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
 }
 
-::-webkit-scrollbar-thumb {
-    background: gray;
-}
-
-.team-item h5 {
-    width: 85%;
-    display: block;
-    position: relative;
-    margin: auto;
-    margin-left: 1rem;
-    font-size: 1rem;
-    top: -73%;
-}
-
-.team-item .special-item {
-    width: 85%;
-    display: block;
-    position: relative;
-    margin: auto;
-    margin-left: 1rem;
-    font-size: 1rem;
-    top: -22%;
-}
-.team-item .join-us{
-    margin-top: 10px;
-    transform: translateY(-10px);
-}
 
 @media (min-width:1440px) { 
     
@@ -477,18 +464,38 @@ html {
         left: 60%;
         width: 28%;
     }
+    h4 {
+        font-size: 25px;
+    }
+    #products-solutions .featured-text {
+        max-height: 500px;
+        overflow: scroll;
+    }
 
 }
 
 @media (min-width: 777px){
     #ai-guided-product-design img {
-        height: 90%;
-        width: 100%;
+        width: 90%;
+        height: auto;
         margin: auto;
     }
     svg {
         width: 28vw;
         height: 100vh;
+    }
+    #digital-twin-for-manufacturing .featured-text {
+        max-height: 595px;
+    }
+    #ai-guided-product-design .featured-text {
+        max-height: 595px;
+    }
+    #implementation-of-digital-twins .featured-text {
+        max-height: 595px;
+    }
+
+    h4 {
+        font-size: 25px;
     }
 }
 
@@ -514,7 +521,12 @@ html {
     }
 
     #products-solutions {
-        padding: 8rem 0 14rem;
+        padding: 2rem 0 0rem;
+        height: 120vh;
+    }
+
+    h4 {
+        font-size: 25px;
     }
 
     .static-section .scroll-button {
@@ -533,6 +545,15 @@ html {
         text-align: center;
         width: unset;
     }
+    #products-solutions .featured-text {
+        max-height: 500px;
+        overflow: scroll;
+    }
+
+    #digital-twin-for-manufacturing .featured-text {
+        max-height: 595px;
+    }
+
 }
 .collapse:not(.show) {
     display: block;
@@ -543,5 +564,21 @@ html {
     }
     #mainNav .navbar-brand .hamburger-icon {
         left: 85vw;
+    }
+    #products-solutions .featured-text {
+        max-height: 500px;
+        overflow: scroll;
+    }
+    #ai-guided-product-design {
+        margin-top: 22%;
+    }
+    #implementation-of-digital-twins {
+        margin-top: 22%;
+    }
+    #implementation-of-digital-twins2 {
+        margin-top: 22%;
+    }
+    #digital-twin-for-manufacturing .featured-text {
+        max-height: 500px;
     }
 }

@@ -27,6 +27,7 @@ let scewedMenu = document.querySelector(".scewedMenu");
 let mainContent = document.querySelector(".main-content");
 let shrinkBar = document.querySelector(".shrink");
 
+
 hamburgerIcon.onclick = (e) => {
     if(menuOpened) {
         e.target.src ="./" + `${iconPath[0]}`;
@@ -78,6 +79,22 @@ mainContent.onmouseover= (e) => {
 
 
 //getCoverImageSize();
+
+
+function checkIfVisitedForFirstTime() {
+    if ( ! hasVisited ) {
+        document.querySelector("#preloader").style.zIndex = 100000;
+        document.querySelector("#preloader").style.opacity = 1;
+        setTimeout(() => {
+            document.querySelector(".proloader-cap").style.opacity = 1;
+            disappearPreloaderBack();
+        }, 2750)
+        sessionStorage.setItem('washere', true);
+    } else {
+        document.querySelector("#preloader").style.zIndex = -10;
+        document.querySelector("#preloader").style.opacity = 0;
+    }
+}
 
 function getCoverImageSize() {
     carouselItems.forEach( item  => {
@@ -245,9 +262,6 @@ function changeColorOfIcon(x) {
 function scaleVideo(state) {
     if ((windowWidht < 700) && (state=="motor")) {
         document.querySelector(".promo-video").style.transform = "scale(2.1)";
-        if(windowWidht < 700) {
-            document.querySelector(".about-section").style.padding = "13rem 0rem 2rem";
-        }
     } else if ((windowWidht < 700) && (state=="srdce")) {
         document.querySelector(".promo-video").style.transform = "scale(1)";
         if(windowWidht < 700) {
@@ -328,6 +342,16 @@ function changeSlideMenu() {
         }, 6000 * i)
     }
 }
+
+function disappearPreloaderBack() {
+    setTimeout(() => {
+        document.querySelector("#preloader").style.zIndex = -10;
+        document.querySelector("#preloader").style.opacity = 0;
+        document.querySelector("#preloader").style.transition = "3s all ease";
+    }, 3000)
+}
+
+
 
 window.onresize = () =>{
     scaleVideo(state);
